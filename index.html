@@ -1,1217 +1,2492 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mimi's Diner — Pinckney, MI</title>
-  <meta name="description" content="Mimi's Diner in Pinckney, MI. Great Food. Great Atmosphere. Great People. Open Daily 8am–8pm. (810) 231-9800.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <title>Mimi's Diner — Pinckney, MI</title>
+    <meta
+      name="description"
+      content="Mimi's Diner in Pinckney, MI. Great Food. Great Atmosphere. Great People. Open Daily 8am–8pm. (810) 231-9800."
+    />
 
-  <!-- Open Graph -->
-  <meta property="og:type" content="restaurant">
-  <meta property="og:title" content="Mimi's Diner — Pinckney, MI">
-  <meta property="og:description" content="Great Food. Great Atmosphere. Great People. Open Daily 8am–8pm in Pinckney, MI.">
-  <meta property="og:url" content="https://mimisdining.com">
-  <meta property="og:image" content="https://mimisdining.com/seating-area.webp">
-  <meta name="twitter:card" content="summary_large_image">
+    <!-- Open Graph -->
+    <meta property="og:type" content="restaurant" />
+    <meta property="og:title" content="Mimi's Diner — Pinckney, MI" />
+    <meta
+      property="og:description"
+      content="Great Food. Great Atmosphere. Great People. Open Daily 8am–8pm in Pinckney, MI."
+    />
+    <meta property="og:url" content="https://mimisdining.com" />
+    <meta
+      property="og:image"
+      content="https://mimisdining.com/seating-area.webp"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
 
-  <!-- LocalBusiness structured data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Restaurant",
-    "name": "Mimi's Diner",
-    "url": "https://mimisdining.com",
-    "telephone": "+18102319800",
-    "image": "https://mimisdining.com/seating-area.webp",
-    "priceRange": "$$",
-    "servesCuisine": ["American", "Greek", "Diner"],
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "5589 E M36",
-      "addressLocality": "Pinckney",
-      "addressRegion": "MI",
-      "postalCode": "48169",
-      "addressCountry": "US"
-    },
-    "openingHours": "Mo-Su 08:00-20:00",
-    "hasMap": "https://www.google.com/maps/search/?api=1&query=5589+E+M36+Pinckney+MI+48169"
-  }
-  </script>
+    <!-- LocalBusiness structured data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "Mimi's Diner",
+        "url": "https://mimisdining.com",
+        "telephone": "+18102319800",
+        "image": "https://mimisdining.com/seating-area.webp",
+        "priceRange": "$$",
+        "servesCuisine": ["American", "Greek", "Diner"],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "5589 E M36",
+          "addressLocality": "Pinckney",
+          "addressRegion": "MI",
+          "postalCode": "48169",
+          "addressCountry": "US"
+        },
+        "openingHours": "Mo-Su 08:00-20:00",
+        "hasMap": "https://www.google.com/maps/search/?api=1&query=5589+E+M36+Pinckney+MI+48169"
+      }
+    </script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <!-- Google Analytics 4 -->
+    <!-- <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-XXXXXXXXXX");
+    </script> -->
 
-<!-- NAV -->
-<nav id="navbar">
-  <div class="nav-inner">
-    <a href="#hero" class="nav-logo"><img src="mimi-website.jpg" alt="Mimi's Diner"></a>
-    <button class="nav-hamburger" aria-label="Open menu" id="hamburger">
-      <span></span><span></span><span></span>
-    </button>
-    <ul class="nav-links" id="nav-links">
-      <li><a href="#menu" class="nav-link">Menu</a></li>
-      <li><a href="#menu" data-tab="catering" class="nav-link">Catering</a></li>
-      <li><a href="#location" class="nav-link">Hours &amp; Find Us</a></li>
-      <li><a href="tel:8102319800" class="nav-cta">(810) 231-9800</a></li>
-    </ul>
-  </div>
-</nav>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav id="navbar">
+      <div class="nav-inner">
+        <a href="#hero" class="nav-logo"
+          ><img src="mimi-website.jpg" alt="Mimi's Diner"
+        /></a>
+        <button class="nav-hamburger" aria-label="Open menu" id="hamburger">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#menu" class="nav-link">Menu</a></li>
+          <li>
+            <a href="#menu" data-tab="catering" class="nav-link">Catering</a>
+          </li>
+          <li><a href="#location" class="nav-link">Hours &amp; Find Us</a></li>
+          <li><a href="tel:8102319800" class="nav-cta">(810) 231-9800</a></li>
+        </ul>
+      </div>
+    </nav>
 
-<!-- HERO -->
-<section id="hero">
-  <div class="hero-overlay"></div>
-  <div class="hero-content">
-    <p class="hero-eyebrow">Est. in Pinckney, Michigan</p>
-    <h1 class="hero-title">Mimi's<br>Diner</h1>
-    <div class="hero-divider"></div>
-    <p class="hero-tagline">"Great Food. Great Atmosphere. Great People."</p>
-    <p class="hero-hours">Open Daily &middot; 8am &ndash; 8pm</p>
-    <div class="hero-actions">
-      <a href="#menu" class="btn btn-primary">View Our Menu</a>
-      <a href="tel:8102319800" class="btn btn-outline">Call Us</a>
-    </div>
-  </div>
-  <div class="hero-scroll-hint">
-    <span>Scroll</span>
-    <div class="scroll-arrow"></div>
-  </div>
-</section>
-
-<!-- INFO STRIP -->
-<section class="info-strip">
-  <div class="info-strip-inner">
-    <div class="info-item">
-      <div class="info-icon">🕗</div>
-      <div><strong>Hours</strong><span>Daily 8am &ndash; 8pm</span></div>
-    </div>
-    <div class="info-item">
-      <div class="info-icon">📞</div>
-      <div><strong>Phone</strong><a href="tel:8102319800">(810) 231-9800</a></div>
-    </div>
-    <div class="info-item">
-      <div class="info-icon">📍</div>
-      <div><strong>Location</strong><span>5589 E M36, Pinckney, MI</span></div>
-    </div>
-  </div>
-</section>
-
-<!-- REVIEWS -->
-<section id="reviews" class="reviews-section">
-  <div class="container">
-    <div class="section-header">
-      <h2>What Our Guests Say</h2>
-      <p>1,000+ reviews on Google &middot; Pinckney's favorite diner</p>
-    </div>
-    <div class="reviews-carousel">
-      <button class="carousel-btn carousel-prev" aria-label="Previous review">&#8249;</button>
-      <div class="carousel-wrap">
-        <div class="carousel-track">
-
-          <div class="review-card">
-            <div class="review-quote">&ldquo;</div>
-            <p class="review-text">My wife and I had breakfast here — the Biscuits and Gravy were amazing. We came back for dinner and they did not disappoint. I have been looking for a place with good fish and chips, and these are the best I've had in a while. Reminds me of going out to eat with my Grandparents, and those moments are some of my favorite memories. The food is great, the service is great, and the atmosphere is perfect.</p>
-            <div class="review-author">
-              <span class="review-name">Daniel C.</span>
-              <span class="review-stars">★★★★★</span>
-            </div>
-          </div>
-
-          <div class="review-card">
-            <div class="review-quote">&ldquo;</div>
-            <p class="review-text">This is my favorite place to eat when I vacation here. The food is amazing. The serving staff have all been friendly and fantastic. On a 5-day vacation, we've gone to Mimi's 4 times. See you again today for #5!</p>
-            <div class="review-author">
-              <span class="review-name">Tyler D.</span>
-              <span class="review-stars">★★★★★</span>
-            </div>
-          </div>
-
-          <div class="review-card">
-            <div class="review-quote">&ldquo;</div>
-            <p class="review-text">Wonderful staff! Feels like home cooking.</p>
-            <div class="review-author">
-              <span class="review-name">Drea P.</span>
-              <span class="review-stars">★★★★★</span>
-            </div>
-          </div>
-
-          <div class="review-card">
-            <div class="review-quote">&ldquo;</div>
-            <p class="review-text">The waitresses were a lot of fun — very friendly and knew the menu well. I had the best bread pudding I have ever had. My husband had the perch and thought it was the best. Will for sure go again.</p>
-            <div class="review-author">
-              <span class="review-name">Priscilla L.</span>
-              <span class="review-stars">★★★★★</span>
-            </div>
-          </div>
-
-          <div class="review-card">
-            <div class="review-quote">&ldquo;</div>
-            <p class="review-text">Excellent food, very quick service! Their fresh-made Biscuits &amp; Gravy is <em>Hillbilly Paradise Delicious</em>. OMG. SO GOOD. The owner is always there keeping things perfect. 🙂</p>
-            <div class="review-author">
-              <span class="review-name">Chris K.</span>
-              <span class="review-stars">★★★★★</span>
-            </div>
-          </div>
-
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="hero-eyebrow">Est. in Pinckney, Michigan</p>
+        <h1 class="hero-title">Mimi's<br />Diner</h1>
+        <div class="hero-divider"></div>
+        <p class="hero-tagline">
+          "Great Food. Great Atmosphere. Great People."
+        </p>
+        <p class="hero-hours">Open Daily &middot; 8am &ndash; 8pm</p>
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-primary">View Our Menu</a>
+          <a href="tel:8102319800" class="btn btn-outline">Call Us</a>
         </div>
       </div>
-      <button class="carousel-btn carousel-next" aria-label="Next review">&#8250;</button>
-    </div>
-    <div class="carousel-dots">
-      <button class="dot active" aria-label="Go to review 1"></button>
-      <button class="dot" aria-label="Go to review 2"></button>
-      <button class="dot" aria-label="Go to review 3"></button>
-      <button class="dot" aria-label="Go to review 4"></button>
-      <button class="dot" aria-label="Go to review 5"></button>
-    </div>
-  </div>
-</section>
-
-<!-- MENU -->
-<section id="menu" class="menu-section">
-  <div class="container">
-    <div class="section-header">
-      <h2>Our Menu</h2>
-      <p>Breakfast served anytime &middot; Dine-in &amp; Takeout</p>
-    </div>
-    <div class="tab-bar">
-      <button class="tab-btn active" data-tab="main">Full Menu</button>
-      <button class="tab-btn" data-tab="catering">Catering</button>
-    </div>
-
-    <!-- ===================== MAIN MENU TAB ===================== -->
-    <div class="tab-panel active" id="tab-main">
-      <div class="combo-note">
-        <strong>Make it a Combo!</strong> Most sandwiches, burgers &amp; gyros: add fries or salad or soup + a large soft drink (1 free refill).
+      <div class="hero-scroll-hint">
+        <span>Scroll</span>
+        <div class="scroll-arrow"></div>
       </div>
+    </section>
 
-      <!-- BREAKFAST -->
-      <details class="accordion" open>
-        <summary class="accordion-header">
-          <span class="acc-title">Breakfast <em>Served Anytime</em></span>
-          <span class="acc-arrow">▾</span>
-        </summary>
-        <div class="accordion-body">
-          <div class="acc-note">Mon–Fri 8–11am: Breakfast Specials available — ask your server!</div>
-
-          <h4 class="sub-section">Hearty Breakfasts <small>with two eggs, hash browns, toast &amp; jelly</small></h4>
-          <div class="menu-grid">
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">★ Steak &amp; Eggs</span><span class="item-price">$17.29</span></div>
-              <p class="item-desc">Juicy 10 oz New York strip steak grilled to order, served sizzling.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">★ Hearty Morning Platter</span><span class="item-price">$11.99</span></div>
-              <p class="item-desc">Three eggs, lean ham, two strips of crispy bacon and two sausages.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Country Fried Steak Breakfast</span><span class="item-price">$15.49</span></div>
-              <p class="item-desc">Served with two eggs.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Gyro &amp; Eggs</span><span class="item-price">$13.29</span></div>
-              <p class="item-desc">Thin slices of savory gyro meat served with onion and tomato.</p>
-            </div>
-          </div>
-
-          <h4 class="sub-section">3-Egg Omelettes <small>with hash browns, toast &amp; jelly &middot; Add sausage gravy +$1.99 &middot; Make any a skillet</small></h4>
-          <div class="menu-grid">
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">★ Meat Lover's</span><span class="item-price">$14.59</span></div>
-              <p class="item-desc">Ham, bacon, sausage and cheddar cheese.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">★ Moe's Omelette</span><span class="item-price">$13.69</span></div>
-              <p class="item-desc">Garden fresh spinach, diced tomato and imported feta cheese. With gyro meat $14.69.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Mexican</span><span class="item-price">$13.99</span></div>
-              <p class="item-desc">Ham and cheese topped with coney chili sauce, green pepper, tomato and onion.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">California</span><span class="item-price">$13.99</span></div>
-              <p class="item-desc">Broccoli, cauliflower, zucchini, yellow squash, tomato, portobello mushrooms and cheddar cheese.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Greek</span><span class="item-price">$13.69</span></div>
-              <p class="item-desc">Feta cheese, green pepper and tomato. With gyro meat $14.69.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Western</span><span class="item-price">$12.99</span></div>
-              <p class="item-desc">Classic combo of ham, green pepper, onion and American cheese.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Very Veggie</span><span class="item-price">$12.99</span></div>
-              <p class="item-desc">Green pepper, onion, tomato and sliced mushrooms.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Farmer's</span><span class="item-price">$13.69</span></div>
-              <p class="item-desc">Sautéed ham, green pepper, onion, hash browns and plenty of Swiss cheese.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Corned Beef Hash Omelette</span><span class="item-price">$14.29</span></div>
-              <p class="item-desc">With Swiss cheese.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Meat &amp; Cheese</span><span class="item-price">$12.39</span></div>
-              <p class="item-desc">Ham, bacon or sausage and cheese.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Mushroom &amp; Swiss</span><span class="item-price">$12.39</span></div>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Cheese Omelette</span><span class="item-price">$9.99</span></div>
-            </div>
-          </div>
-
-          <h4 class="sub-section">From the Egg Basket</h4>
-          <div class="menu-grid">
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Two Eggs with Toast</span><span class="item-price">$5.79</span></div>
-              <p class="item-desc">With hash browns $6.99 &middot; With meat $7.79 &middot; With meat &amp; hash browns $8.99</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">★ Biscuits &amp; Gravy</span><span class="item-price">$7.99</span></div>
-              <p class="item-desc">Two biscuits topped with sausage gravy. One biscuit $5.29. Add two eggs +$2.69.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">★ Sausage Gravy</span><span class="item-price">Cup $4.79 / Bowl $6.99</span></div>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Corned Beef Hash</span><span class="item-price">$8.79</span></div>
-              <p class="item-desc">With two eggs, toast and jelly.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">★ Breakfast Sandwich</span><span class="item-price">$4.99</span></div>
-              <p class="item-desc">Fried egg with sausage, ham or bacon + American cheese on toast, English muffin or bagel. Make it a Wrap +$6.49.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Eggs Benedict</span><span class="item-price">$11.99</span></div>
-              <p class="item-desc">Dearborn ham, poached eggs, hollandaise sauce on an English muffin with hash browns.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Avocado Toast</span><span class="item-price">$10.99</span></div>
-              <p class="item-desc">Fresh avocado mashed with lemon on Greek toast with two scrambled eggs.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Greek Avocado Toast</span><span class="item-price">$11.99</span></div>
-              <p class="item-desc">Avocado toast with diced tomato, onion, feta cheese and balsamic reduction glaze.</p>
-            </div>
-          </div>
-
-          <h4 class="sub-section">Hot Off the Griddle</h4>
-          <div class="menu-grid">
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">★ Hodge's Trio</span><span class="item-price">$11.29</span></div>
-              <p class="item-desc">Choice of breakfast meat and two eggs + one of: 3 Golden Pancakes, 8 Silver Dollar Pancakes, Full French Toast, or 1 Belgian Waffle.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">★ Nora's Favorite</span><span class="item-price">$9.99</span></div>
-              <p class="item-desc">Half order of pancakes or French toast with your choice of meat and two eggs.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Three Golden Pancakes</span><span class="item-price">$8.99</span></div>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Half Order of Pancakes</span><span class="item-price">$6.99</span></div>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">8 Silver Dollar Pancakes</span><span class="item-price">$8.99</span></div>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">French Toast</span><span class="item-price">$8.99</span></div>
-              <p class="item-desc">Half order $6.99.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Belgian Waffle (plain)</span><span class="item-price">$8.99</span></div>
-              <p class="item-desc">Available daily until 2pm.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Cinnamon Raisin French Toast</span><span class="item-price">$9.99</span></div>
-              <p class="item-desc">Half order $8.99. Add eggs +$2.69 &middot; Add meat +$3.99 &middot; Add banana, pecans, walnuts, blueberries, choc chips or fruit topping +$1.59.</p>
-            </div>
-          </div>
-
-          <h4 class="sub-section">Breakfast Sides</h4>
-          <div class="menu-grid">
-            <div class="menu-item"><div class="item-top"><span class="item-name">Ham, Bacon or Sausage</span><span class="item-price">$4.99</span></div></div>
-            <div class="menu-item"><div class="item-top"><span class="item-name">Hash Browns</span><span class="item-price">$4.99</span></div></div>
-            <div class="menu-item"><div class="item-top"><span class="item-name">English Muffin</span><span class="item-price">$2.29</span></div></div>
-            <div class="menu-item"><div class="item-top"><span class="item-name">Cinnamon Raisin Toast</span><span class="item-price">$2.99</span></div></div>
-            <div class="menu-item"><div class="item-top"><span class="item-name">Bagel with Cream Cheese</span><span class="item-price">$3.79</span></div></div>
-            <div class="menu-item"><div class="item-top"><span class="item-name">Greek Toast</span><span class="item-price">$2.99</span></div></div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Bowl of Oatmeal</span><span class="item-price">$5.29</span></div>
-              <p class="item-desc">With milk, brown sugar and raisins. Add fresh fruit or nuts +$1.29.</p>
-            </div>
-            <div class="menu-item"><div class="item-top"><span class="item-name">Toast &amp; Jelly</span><span class="item-price">$1.99</span></div></div>
-            <div class="menu-item"><div class="item-top"><span class="item-name">Two Biscuits</span><span class="item-price">$3.99</span></div></div>
-            <div class="menu-item"><div class="item-top"><span class="item-name">Fruit Cup</span><span class="item-price">$4.99</span></div></div>
+    <!-- INFO STRIP -->
+    <section class="info-strip">
+      <div class="info-strip-inner">
+        <div class="info-item">
+          <div class="info-icon">🕗</div>
+          <div><strong>Hours</strong><span>Daily 8am &ndash; 8pm</span></div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">📞</div>
+          <div>
+            <strong>Phone</strong><a href="tel:8102319800">(810) 231-9800</a>
           </div>
         </div>
-      </details>
-
-      <!-- APPETIZERS -->
-      <details class="accordion">
-        <summary class="accordion-header">
-          <span class="acc-title">Appetizers</span>
-          <span class="acc-arrow">▾</span>
-        </summary>
-        <div class="accordion-body">
-          <div class="menu-grid">
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">★ Sampler Platter</span><span class="item-price">$13.69</span></div>
-              <p class="item-desc">Mozzarella cheese stix, cheese-stuffed jalapeño peppers and golden chicken fingers. Great for sharing!</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">★ Saganaki</span><span class="item-price">$10.29</span></div>
-              <p class="item-desc">Imported Kasseri cheese flamed tableside. Opa! Served with fresh pita.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">★ Spinach Pie (Spanakopita)</span><span class="item-price">$6.99</span></div>
-              <p class="item-desc">Thin layers of phyllo pastry filled with fresh spinach, feta cheese and special seasonings. With a small Greek salad $10.59.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Hummus</span><span class="item-price">$8.79</span></div>
-              <p class="item-desc">Ground chickpeas with tahini and select spices served with fresh pita.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Chicken Fingers</span><span class="item-price">$9.29</span></div>
-              <p class="item-desc">Five tender breaded chicken breast strips.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Mozzarella Cheese Stix (6)</span><span class="item-price">$8.29</span></div>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Fried Mushrooms</span><span class="item-price">$8.29</span></div>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Wing Dings</span><span class="item-price">5/$7.59 &middot; 10/$10.99 &middot; 15/$15.29</span></div>
-              <p class="item-desc">Meaty lightly breaded wings. Plain, buffalo or BBQ sauce.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Stuffed Jalapeño Poppers (6)</span><span class="item-price">$7.79</span></div>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Stuffed Grape Leaves</span><span class="item-price">$8.79</span></div>
-              <p class="item-desc">Vegetarian! Six stuffed grape leaves served chilled with fresh pita bread.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Broccoli Cheese Bites (6)</span><span class="item-price">$8.79</span></div>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Potato Skins (4)</span><span class="item-price">$8.19</span></div>
-              <p class="item-desc">With cheddar cheese, bacon and a side of sour cream.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Fried Zucchini</span><span class="item-price">$8.19</span></div>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Onion Rings</span><span class="item-price">$5.79</span></div>
-            </div>
+        <div class="info-item">
+          <div class="info-icon">📍</div>
+          <div>
+            <strong>Location</strong><span>5589 E M36, Pinckney, MI</span>
           </div>
-        </div>
-      </details>
-
-      <!-- SOUPS -->
-      <details class="accordion">
-        <summary class="accordion-header">
-          <span class="acc-title">Soups</span>
-          <span class="acc-arrow">▾</span>
-        </summary>
-        <div class="accordion-body">
-          <div class="menu-grid">
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Lemon Rice Soup</span><span class="item-price">Cup $4.79 / Bowl $6.29</span></div>
-              <p class="item-desc">A velvety rich Greek favorite.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Soup of the Day</span><span class="item-price">Cup $4.79 / Bowl $6.29</span></div>
-              <p class="item-desc">Ask what's cookin' today! Quart to take home $10.29.</p>
-            </div>
-          </div>
-        </div>
-      </details>
-
-      <!-- SALADS -->
-      <details class="accordion">
-        <summary class="accordion-header">
-          <span class="acc-title">Fresh Salads</span>
-          <span class="acc-arrow">▾</span>
-        </summary>
-        <div class="accordion-body">
-          <div class="acc-note">Add fresh pita bread +$0.79</div>
-          <div class="menu-grid">
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">★ Great Greek Salad</span><span class="item-price">Sm $5.79 / Med $9.99 / Lg $14.99</span></div>
-              <p class="item-desc">Crisp greens, sliced tomato, feta cheese, chickpeas, beets, Greek olives and peppers with housemade Greek dressing.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">★ Maurice Salad</span><span class="item-price">$13.99</span></div>
-              <p class="item-desc">Turkey, ham, Swiss and American cheeses, tomato, egg slices, stuffed green olives and Gherkin pickles with Hudson's Maurice dressing.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">★ Grilled Chicken Greek Salad</span><span class="item-price">$13.99</span></div>
-              <p class="item-desc">Fresh marinated chicken breast grilled and sliced atop crisp lettuce, tomato, chickpeas, Greek olives, feta and peppers with housemade Greek dressing.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Crispy Chicken Salad</span><span class="item-price">$13.99</span></div>
-              <p class="item-desc">Sliced crispy chicken tenders with bacon, tomatoes and shredded cheese over lettuce blend.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Chicken Caesar Salad</span><span class="item-price">$12.99</span></div>
-              <p class="item-desc">Marinated chicken breast with romaine lettuce, croutons, Parmesan cheese and Caesar dressing.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">★ California Salad</span><span class="item-price">$14.99</span></div>
-              <p class="item-desc">Grilled chicken, romaine lettuce, cucumbers, dried cranberries, walnuts, crumbled bleu cheese, tomatoes and raspberry vinaigrette. With salmon $16.79.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Chicken Pecan or Tuna Salad Plate</span><span class="item-price">$11.59</span></div>
-              <p class="item-desc">Fresh made chicken pecan or tuna salad with a hard-boiled egg, tomato, Swiss and American cheeses and coleslaw on a lettuce leaf.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Garden Salad</span><span class="item-price">$4.99</span></div>
-              <p class="item-desc">Crisp lettuce, tomato, shredded cheese, cucumber and croutons.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Side Caesar Salad</span><span class="item-price">$5.19</span></div>
-            </div>
-          </div>
-        </div>
-      </details>
-
-      <!-- SANDWICHES -->
-      <details class="accordion">
-        <summary class="accordion-header">
-          <span class="acc-title">Sandwiches</span>
-          <span class="acc-arrow">▾</span>
-        </summary>
-        <div class="accordion-body">
-          <div class="menu-grid">
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Grilled Chicken Breast</span><span class="item-price">$7.59</span></div>
-              <p class="item-desc">5 oz. fresh chicken marinated and grilled on an onion roll with lettuce, tomato and mayo.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Grilled Ham &amp; Cheese</span><span class="item-price">$6.99</span></div>
-              <p class="item-desc">Three thick slices of lean ham with American cheese grilled on white bread.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Fish Sandwich</span><span class="item-price">$9.99</span></div>
-              <p class="item-desc">Hand-battered Atlantic cod (two-piece) on a seeded bun.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">BLT</span><span class="item-price">$7.59</span></div>
-              <p class="item-desc">Crisp bacon, lettuce, tomato and mayo.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Grilled Cheese</span><span class="item-price">$5.39</span></div>
-              <p class="item-desc">On Texas toast.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">★ Club Sandwich</span><span class="item-price">$10.29</span></div>
-              <p class="item-desc">Triple decker stacked with turkey, bacon, lettuce, tomato and mayo on toasted white bread.</p>
-            </div>
-          </div>
-        </div>
-      </details>
-
-      <!-- BURGERS -->
-      <details class="accordion">
-        <summary class="accordion-header">
-          <span class="acc-title">Burgers</span>
-          <span class="acc-arrow">▾</span>
-        </summary>
-        <div class="accordion-body">
-          <div class="acc-note">All patties are 1/4 lb.</div>
-          <div class="menu-grid">
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">★ Moe's Burger</span><span class="item-price">$9.79</span></div>
-              <p class="item-desc">Two all-beef patties, two slices of melted cheese, grilled onion, lettuce, pickle and tomato. Add crisp bacon +$1.59.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Double Bacon Cheeseburger</span><span class="item-price">$9.79</span></div>
-              <p class="item-desc">Two 1/4 lb. patties with bacon, melted cheese, lettuce, tomato and pickle.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Bacon Cheeseburger</span><span class="item-price">$7.59</span></div>
-              <p class="item-desc">Crisp bacon, melted cheese, lettuce, tomato and pickle.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Mushroom Swiss Burger</span><span class="item-price">$7.99</span></div>
-              <p class="item-desc">Melted Swiss cheese, sautéed sliced mushrooms, pickle, lettuce and tomato.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Burger</span><span class="item-price">$6.79</span></div>
-              <p class="item-desc">With lettuce, tomato and pickle. With melted cheese $6.99.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Olive Burger</span><span class="item-price">$6.99</span></div>
-              <p class="item-desc">Dressed with lettuce, tomato, pickle and olive mayo sauce.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">BBQ Cheddar Burger</span><span class="item-price">$8.99</span></div>
-              <p class="item-desc">BBQ sauce, lettuce and tomatoes, topped with onion rings.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Tony's Burger</span><span class="item-price">$9.49</span></div>
-              <p class="item-desc">Two burger patties topped with marinara sauce, mozzarella cheese sticks and Swiss cheese.</p>
-            </div>
-          </div>
-        </div>
-      </details>
-
-      <!-- SUPER SANDWICHES & MELTS -->
-      <details class="accordion">
-        <summary class="accordion-header">
-          <span class="acc-title">Super Sandwiches &amp; Melts</span>
-          <span class="acc-arrow">▾</span>
-        </summary>
-        <div class="accordion-body">
-          <div class="acc-note">Super Sandwiches served on a panini bun &middot; Melts served on grilled rye &middot; Add bacon +$1.59</div>
-          <div class="menu-grid">
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">★ Philly Steak</span><span class="item-price">$10.49</span></div>
-              <p class="item-desc">Choice steak (6.5 oz.) sliced thin, sautéed with green pepper, onion and mushrooms. Topped with melted Swiss cheese.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">The Maggie</span><span class="item-price">$9.59</span></div>
-              <p class="item-desc">Marinated sliced chicken breast sautéed with green pepper, onion and mushrooms topped with melted Swiss cheese.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">French Dip</span><span class="item-price">$9.59</span></div>
-              <p class="item-desc">Thin slices of roast sirloin with melted Swiss cheese. Served with au jus.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Slim Betty</span><span class="item-price">$8.99</span></div>
-              <p class="item-desc">Thinly sliced turkey grilled and topped with Swiss cheese, lettuce, tomato and mayo.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Big Barney</span><span class="item-price">$8.99</span></div>
-              <p class="item-desc">Ham, Swiss cheese, lettuce, tomato and mayo.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Chicken Parmesan Sandwich</span><span class="item-price">$9.99</span></div>
-              <p class="item-desc">Marinated chicken breast with marinara sauce and mozzarella cheese on ciabatta bread.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">NY Strip Steak Sandwich</span><span class="item-price">$17.49</span></div>
-              <p class="item-desc">A juicy 10 oz NY strip steak grilled to order, topped with grilled onions and green peppers.</p>
-            </div>
-          </div>
-          <h4 class="sub-section">The Melts</h4>
-          <div class="menu-grid">
-            <div class="menu-item"><div class="item-top"><span class="item-name">Turkey &amp; Swiss Melt</span><span class="item-price">$8.59</span></div></div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Chicken Tender Melt</span><span class="item-price">$7.99</span></div>
-              <p class="item-desc">Blanketed with melted Swiss and American cheeses.</p>
-            </div>
-            <div class="menu-item"><div class="item-top"><span class="item-name">Tuna &amp; Swiss Melt</span><span class="item-price">$8.99</span></div></div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Patty Melt</span><span class="item-price">$7.59</span></div>
-              <p class="item-desc">Quarter-pound burger with grilled onion and Swiss cheese.</p>
-            </div>
-          </div>
-        </div>
-      </details>
-
-      <!-- WRAPS -->
-      <details class="accordion">
-        <summary class="accordion-header">
-          <span class="acc-title">Wraps</span>
-          <span class="acc-arrow">▾</span>
-        </summary>
-        <div class="accordion-body">
-          <div class="menu-grid">
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Club Wrap</span><span class="item-price">$10.29</span></div>
-              <p class="item-desc">Turkey, bacon, lettuce, tomatoes and mayo.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Chicken Caesar Wrap</span><span class="item-price">$8.99</span></div>
-              <p class="item-desc">Marinated chicken breast, romaine lettuce and Caesar dressing.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Tuna &amp; Swiss Wrap</span><span class="item-price">$8.69</span></div>
-              <p class="item-desc">Homemade tuna salad with lettuce, tomatoes and Swiss cheese.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Chicken Salad Pecan Wrap</span><span class="item-price">$8.99</span></div>
-              <p class="item-desc">Chicken salad, pecans, dried cranberries, lettuce and tomatoes.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Hani Wrap</span><span class="item-price">$8.69</span></div>
-              <p class="item-desc">Chicken strips, lettuce, tomatoes, Swiss and American cheeses with your choice of sauce.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Grilled Chicken Wrap</span><span class="item-price">$8.59</span></div>
-              <p class="item-desc">Grilled or crispy chicken with lettuce, tomatoes and onions. With hummus or buffalo style with bleu cheese $9.29.</p>
-            </div>
-          </div>
-        </div>
-      </details>
-
-      <!-- GYROS & QUESADILLAS -->
-      <details class="accordion">
-        <summary class="accordion-header">
-          <span class="acc-title">Gyros &amp; Quesadillas</span>
-          <span class="acc-arrow">▾</span>
-        </summary>
-        <div class="accordion-body">
-          <h4 class="sub-section">Authentic Gyros</h4>
-          <div class="menu-grid">
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">★ Gyro Supreme</span><span class="item-price">$8.99</span></div>
-              <p class="item-desc">Seasoned lamb and beef blend sliced thin in fresh pita with feta cheese, diced tomato, lettuce, onion and housemade gyro sauce.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Gyro</span><span class="item-price">$8.79</span></div>
-              <p class="item-desc">Slices of seasoned lamb and beef in fresh pita with onion, tomato and housemade gyro sauce.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Chicken Gyro Supreme</span><span class="item-price">$8.79</span></div>
-              <p class="item-desc">Seasoned broiled chicken breast in fresh pita with feta cheese, diced tomato, lettuce, onion and housemade gyro sauce.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Chicken Gyro</span><span class="item-price">$8.59</span></div>
-              <p class="item-desc">Seasoned sliced chicken breast in fresh pita with onion, lettuce, tomato and fresh housemade gyro sauce.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Turkey &amp; Swiss Gyro</span><span class="item-price">$8.59</span></div>
-              <p class="item-desc">Hot roast turkey, Swiss cheese, onion, lettuce and tomato with housemade gyro sauce in fresh pita.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">★ Beef or Chicken Kebob Wrap</span><span class="item-price">Beef $11.99 / Chicken $11.49</span></div>
-              <p class="item-desc">Marinated tender beef or chicken grilled with garden veggies, tomatoes and onions with homemade gyro sauce in a pita.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Ham &amp; Cheese Gyro</span><span class="item-price">$8.59</span></div>
-              <p class="item-desc">Lean ham with Swiss cheese, tomato, onion and lettuce sided with gyro sauce in fresh pita.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">California Gyro</span><span class="item-price">$8.99</span></div>
-              <p class="item-desc">Grilled portobello mushrooms, broccoli, green pepper and onion with melted cheddar, lettuce, tomato and gyro sauce. Add grilled chicken +$1.99.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Hani Gyro</span><span class="item-price">$8.69</span></div>
-              <p class="item-desc">Sliced chicken tenders fried to a golden crisp with Swiss and American cheeses, lettuce, tomato and your choice of sauce.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Vegetarian Gyro</span><span class="item-price">$6.99</span></div>
-              <p class="item-desc">Feta cheese, tomato, lettuce and onion with gyro sauce in fresh pita.</p>
-            </div>
-          </div>
-          <h4 class="sub-section">Quesadillas <small>Served with lettuce and tomato &middot; Make it a combo +$4.79</small></h4>
-          <div class="menu-grid">
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Greek Quesadilla</span><span class="item-price">$12.59</span></div>
-              <p class="item-desc">Grilled tortilla stuffed with gyro meat, feta cheese, tomatoes and onions. Served with gyro sauce.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Cheese Quesadilla</span><span class="item-price">$9.79</span></div>
-              <p class="item-desc">Grilled tortilla stuffed with melted cheese, green peppers and onions. Served with sour cream and salsa.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Chicken Quesadilla</span><span class="item-price">$12.59</span></div>
-              <p class="item-desc">Grilled tortilla stuffed with melted cheese, grilled chicken strips, green peppers and onions.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Steak Quesadilla</span><span class="item-price">$13.59</span></div>
-              <p class="item-desc">Grilled tortilla stuffed with melted cheese, thinly sliced steak, green peppers and onions.</p>
-            </div>
-          </div>
-        </div>
-      </details>
-
-      <!-- CONEY ISLAND -->
-      <details class="accordion">
-        <summary class="accordion-header">
-          <span class="acc-title">Coney Island</span>
-          <span class="acc-arrow">▾</span>
-        </summary>
-        <div class="accordion-body">
-          <div class="menu-grid">
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Coney Island Hot Dog</span><span class="item-price">$3.99</span></div>
-              <p class="item-desc">Juicy hot dog topped with meaty chili, mustard and onion. With melted cheese $4.29.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Coney Special</span><span class="item-price">$5.09</span></div>
-              <p class="item-desc">Hot dog with loose hamburger, chili, mustard and onion. With melted cheese $5.59.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Loose Hamburger</span><span class="item-price">$4.29</span></div>
-              <p class="item-desc">Ground beef on a hot dog bun with chili, mustard and onion. With melted cheese $4.79.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Coney-Style Chili</span><span class="item-price">Cup $4.59 / Bowl $6.09</span></div>
-              <p class="item-desc">Add hamburger meat: Cup $5.69 / Bowl $7.09.</p>
-            </div>
-            <div class="menu-item"><div class="item-top"><span class="item-name">Chili Cheese Fries</span><span class="item-price">$5.29</span></div></div>
-            <div class="menu-item"><div class="item-top"><span class="item-name">Chili Fries</span><span class="item-price">$4.69</span></div></div>
-            <div class="menu-item"><div class="item-top"><span class="item-name">Cheese Fries</span><span class="item-price">$4.59</span></div></div>
-            <div class="menu-item"><div class="item-top"><span class="item-name">French Fries</span><span class="item-price">$4.29</span></div></div>
-          </div>
-        </div>
-      </details>
-
-      <!-- FROM THE DELI -->
-      <details class="accordion">
-        <summary class="accordion-header">
-          <span class="acc-title">From the Deli</span>
-          <span class="acc-arrow">▾</span>
-        </summary>
-        <div class="accordion-body">
-          <div class="menu-grid">
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">★ Reuben</span><span class="item-price">$9.49</span></div>
-              <p class="item-desc">House-cooked corned beef with Swiss cheese and tangy sauerkraut on grilled rye, with a side of Thousand Island.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Turkey Reuben</span><span class="item-price">$9.49</span></div>
-              <p class="item-desc">Roast turkey breast with melted Swiss cheese and coleslaw on grilled rye. Sided with Thousand Island.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Roast Beef Sandwich</span><span class="item-price">$8.49</span></div>
-              <p class="item-desc">Stacked high on a sub bun with lettuce, tomatoes and horseradish sauce.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Corned Beef on Rye</span><span class="item-price">$8.99</span></div>
-              <p class="item-desc">House-cooked corned beef — the best tasting corned beef in town!</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Turkey Breast</span><span class="item-price">$8.69</span></div>
-              <p class="item-desc">Deli turkey with lettuce, tomato and mayo on a panini sub bun.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Tuna Salad Sandwich</span><span class="item-price">$8.49</span></div>
-              <p class="item-desc">Creamy and delicious! Served on toast.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Chicken Pecan Salad Sandwich</span><span class="item-price">$8.99</span></div>
-              <p class="item-desc">Chicken salad with pecans, dried cranberries, lettuce and tomatoes.</p>
-            </div>
-          </div>
-        </div>
-      </details>
-
-      <!-- GREEK DINNER SPECIALTIES -->
-      <details class="accordion">
-        <summary class="accordion-header">
-          <span class="acc-title">Greek Dinner Specialties</span>
-          <span class="acc-arrow">▾</span>
-        </summary>
-        <div class="accordion-body">
-          <div class="acc-note">Authentic taste! Served with your choice of two dinner sides and fresh baked Greek bread &amp; butter. Add 3rd side +$2.99.</div>
-          <div class="menu-grid">
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">★ Beef or Chicken Kebob</span><span class="item-price">$17.29</span></div>
-              <p class="item-desc">Fresh chicken breast or beef tenderloin skewered with green pepper and onion, grilled to perfection.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">★ Chicken Breast Dinner</span><span class="item-price">$16.99</span></div>
-              <p class="item-desc">Tender and juicy marinated chicken breast grilled Greek-style with lemon and oregano seasonings.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Chicken with Hummus Dinner</span><span class="item-price">$16.99</span></div>
-              <p class="item-desc">Grilled chicken breast sliced and served on a bed of hummus topped with tomato, onion and sided with housemade gyro sauce and pita bread.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Greek Trio</span><span class="item-price">$16.99</span></div>
-              <p class="item-desc">Moussaka, spinach pie, a stuffed grape leaf and your choice of sliced gyro meat or sliced chicken breast.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Gyro or Chicken Gyro Plate</span><span class="item-price">$16.99</span></div>
-              <p class="item-desc">Gyro (seasoned lamb and beef) or chicken breast, sliced thin with tomatoes, onions, gyro sauce and fresh pita bread.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Lamb Shank</span><span class="item-price">$20.99</span></div>
-              <p class="item-desc">A tender savory choice carefully baked in tomato sauce.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">★ Housemade Spinach Pie Dinner</span><span class="item-price">$14.99</span></div>
-              <p class="item-desc">Fresh spinach and feta cheese with our own blend of spices, layered between flaky Greek phyllo pastry. Served piping hot.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Moussaka</span><span class="item-price">$16.99</span></div>
-              <p class="item-desc">Sliced eggplant layered with specially seasoned ground beef, baked to perfection.</p>
-            </div>
-          </div>
-        </div>
-      </details>
-
-      <!-- DINNER -->
-      <details class="accordion">
-        <summary class="accordion-header">
-          <span class="acc-title">Dinner</span>
-          <span class="acc-arrow">▾</span>
-        </summary>
-        <div class="accordion-body">
-          <div class="acc-note">Served with your choice of two dinner sides and fresh baked Greek bread &amp; butter. Add 3rd side +$2.99.</div>
-          <div class="menu-grid">
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Country Fried Steak</span><span class="item-price">$15.49</span></div>
-              <p class="item-desc">Served with country gravy.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Chopped Sirloin 10 oz.</span><span class="item-price">$16.69</span></div>
-              <p class="item-desc">Chopped sirloin cooked to order with plenty of sautéed mushrooms and onion.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Chicken Finger Dinner</span><span class="item-price">$16.99</span></div>
-              <p class="item-desc">Five chicken fingers.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Wing Ding Dinner</span><span class="item-price">$15.99</span></div>
-              <p class="item-desc">Eight meaty wings fried to perfection. Plain, buffalo, BBQ or garlic butter sauce.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">New York Strip Steak 10 oz.</span><span class="item-price">$18.99</span></div>
-              <p class="item-desc">Ten ounces of tender NY strip cooked to order. Add deep-fried jumbo shrimp +$2.50 each.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Center-Cut Pork Chops (2)</span><span class="item-price">$16.99</span></div>
-              <p class="item-desc">Grilled to perfection. With applesauce.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Meatloaf</span><span class="item-price">$16.49</span></div>
-              <p class="item-desc">Made with a blend of Greek herbs and spices.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Liver &amp; Onions</span><span class="item-price">$15.59</span></div>
-              <p class="item-desc">Grilled beef liver served with sautéed onion.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Veal Cutlet</span><span class="item-price">$14.99</span></div>
-              <p class="item-desc">Two tender breaded veal patties with beef gravy.</p>
-            </div>
-          </div>
-          <h4 class="sub-section">Stir-Fry Dinner <small>with one dinner side and fresh baked Greek bread &amp; butter</small></h4>
-          <div class="menu-grid">
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">★ Vegetable Stir-Fry</span><span class="item-price">$14.99</span></div>
-              <p class="item-desc">Garden fresh assortment of vegetables, seasoned with teriyaki and soy sauce. Served steaming over rice pilaf.</p>
-            </div>
-            <div class="menu-item"><div class="item-top"><span class="item-name">★ Sliced NY Strip Stir-Fry</span><span class="item-price">$17.99</span></div></div>
-            <div class="menu-item"><div class="item-top"><span class="item-name">★ Succulent Shrimp Stir-Fry</span><span class="item-price">$17.99</span></div></div>
-            <div class="menu-item"><div class="item-top"><span class="item-name">★ Sliced Chicken Stir-Fry</span><span class="item-price">$16.99</span></div></div>
-            <div class="menu-item"><div class="item-top"><span class="item-name">★ Chicken &amp; Shrimp Combo Stir-Fry</span><span class="item-price">$21.99</span></div></div>
-          </div>
-          <h4 class="sub-section">Homemade Hearty Hot Sandwiches <small>with two dinner sides</small></h4>
-          <div class="menu-grid">
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Hot Turkey</span><span class="item-price">$15.29</span></div>
-              <p class="item-desc">Pure natural goodness!</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Hot Beef</span><span class="item-price">$15.29</span></div>
-              <p class="item-desc">Home-style eye of round.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Hot Meatloaf</span><span class="item-price">$15.29</span></div>
-              <p class="item-desc">Made with a blend of Greek herbs and spices.</p>
-            </div>
-          </div>
-          <h4 class="sub-section">Dinner Sides</h4>
-          <p class="side-list">French Fries &middot; Baked Potato &middot; Mashed Potatoes &middot; Coleslaw &middot; Sweet Potato Fries &middot; Rice Pilaf &middot; Vegetable of the Day &middot; Soup &middot; Greek, Caesar or Garden Salad &middot; Cottage Cheese &middot; Applesauce</p>
-        </div>
-      </details>
-
-      <!-- SEAFOOD -->
-      <details class="accordion">
-        <summary class="accordion-header">
-          <span class="acc-title">Seafood</span>
-          <span class="acc-arrow">▾</span>
-        </summary>
-        <div class="accordion-body">
-          <div class="acc-note">Served with your choice of two dinner sides and fresh baked Greek bread &amp; butter. Add 3rd side +$2.99.</div>
-          <div class="menu-grid">
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Pan-Fried Walleye</span><span class="item-price">$19.99</span></div>
-              <p class="item-desc">Delicate walleye fillet lightly breaded with pretzel crumbs, served with honey-mustard.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Broiled Alaskan Salmon</span><span class="item-price">$18.99</span></div>
-              <p class="item-desc">Marinated with a teriyaki glaze.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Fish &amp; Chips</span><span class="item-price">$16.89</span></div>
-              <p class="item-desc">Flaky Atlantic cod hand-dipped in batter, deep-fried golden. Served with fries and one additional side.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Fried Jumbo Shrimp</span><span class="item-price">$18.59</span></div>
-              <p class="item-desc">Eight shrimp, freshly battered.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Fresh Lake Perch</span><span class="item-price">$18.49</span></div>
-              <p class="item-desc">Our batter-dipped perch is delicious!</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Broiled Cod</span><span class="item-price">$18.99</span></div>
-              <p class="item-desc">North Atlantic cod loin lightly seasoned and broiled.</p>
-            </div>
-          </div>
-        </div>
-      </details>
-
-      <!-- PASTA -->
-      <details class="accordion">
-        <summary class="accordion-header">
-          <span class="acc-title">Pasta</span>
-          <span class="acc-arrow">▾</span>
-        </summary>
-        <div class="accordion-body">
-          <div class="acc-note">Served with your choice of one dinner side, fresh baked garlic bread &amp; butter. Add 2nd side +$2.99.</div>
-          <div class="menu-grid">
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Penne or Spaghetti with Marinara</span><span class="item-price">$13.59</span></div>
-              <p class="item-desc">Your choice of pasta with marinara sauce. Add meat sauce +$2.50.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Chicken Parmesan</span><span class="item-price">$16.99</span></div>
-              <p class="item-desc">Breaded chicken topped with mozzarella cheese. Served with spaghetti and marinara sauce.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Greek Pasta</span><span class="item-price">$16.99</span></div>
-              <p class="item-desc">Sliced chicken breast, onions and tomatoes sautéed in our own Greek dressing with penne pasta, feta and cheddar cheese.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Veal Parmesan</span><span class="item-price">$14.99</span></div>
-              <p class="item-desc">Breaded veal topped with mozzarella cheese. Served with spaghetti and marinara sauce.</p>
-            </div>
-          </div>
-        </div>
-      </details>
-
-      <!-- DESSERTS -->
-      <details class="accordion">
-        <summary class="accordion-header">
-          <span class="acc-title">Desserts</span>
-          <span class="acc-arrow">▾</span>
-        </summary>
-        <div class="accordion-body">
-          <div class="menu-grid">
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">★ Cheesecake</span><span class="item-price">$4.99</span></div>
-              <p class="item-desc">Rich and creamy cheesecake. Choose strawberry, turtle or plain ($4.75).</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">★ Mimi's Heavenly Bread Pudding</span><span class="item-price">$7.99</span></div>
-              <p class="item-desc">Homemade with raisins, walnuts and dates. Served warm, topped with vanilla ice cream and drizzled with caramel.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Banana Split</span><span class="item-price">$8.59</span></div>
-              <p class="item-desc">Chocolate, vanilla and strawberry ice cream with Hershey's chocolate syrup, caramel, strawberry toppings, nuts, whipped cream and a cherry.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Hot Fudge Cream Puff</span><span class="item-price">$6.49</span></div>
-              <p class="item-desc">Vanilla ice cream and hot fudge.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Fruit Pie</span><span class="item-price">$4.39</span></div>
-              <p class="item-desc">Apple, blueberry or cherry pie made fresh. À la mode $5.29.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Pecan Pie</span><span class="item-price">$4.99</span></div>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">★ Rice Pudding</span><span class="item-price">$3.99</span></div>
-              <p class="item-desc">Thick and creamy, spiced with cinnamon, served warm upon request.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">★ Ice Cream Sundae</span><span class="item-price">$5.29</span></div>
-              <p class="item-desc">Cool rich ice cream topped with a river of your favorite flavor.</p>
-            </div>
-          </div>
-        </div>
-      </details>
-
-      <!-- DRINKS -->
-      <details class="accordion">
-        <summary class="accordion-header">
-          <span class="acc-title">Drinks</span>
-          <span class="acc-arrow">▾</span>
-        </summary>
-        <div class="accordion-body">
-          <div class="menu-grid">
-            <div class="menu-item"><div class="item-top"><span class="item-name">Freshly Brewed Coffee</span><span class="item-price">$3.39</span></div><p class="item-desc">Regular or decaf.</p></div>
-            <div class="menu-item"><div class="item-top"><span class="item-name">Hot Tea</span><span class="item-price">$3.39</span></div><p class="item-desc">Regular or herbal.</p></div>
-            <div class="menu-item"><div class="item-top"><span class="item-name">Nestlé Hot Chocolate</span><span class="item-price">$3.39</span></div></div>
-            <div class="menu-item"><div class="item-top"><span class="item-name">Soft Drinks (Coke products)</span><span class="item-price">Sm $3.25 / Lg $3.39</span></div></div>
-            <div class="menu-item"><div class="item-top"><span class="item-name">Iced Tea</span><span class="item-price">$3.39</span></div><p class="item-desc">Add raspberry +$0.40.</p></div>
-            <div class="menu-item"><div class="item-top"><span class="item-name">Lemonade</span><span class="item-price">$3.39</span></div><p class="item-desc">Add raspberry +$0.40.</p></div>
-            <div class="menu-item"><div class="item-top"><span class="item-name">Milk</span><span class="item-price">Sm $2.79 / Lg $3.69</span></div><p class="item-desc">White or chocolate.</p></div>
-            <div class="menu-item"><div class="item-top"><span class="item-name">Chilled Juice</span><span class="item-price">Sm $3.59 / Lg $4.09</span></div><p class="item-desc">Orange, cranberry, apple or tomato.</p></div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Milk Shakes</span><span class="item-price">$5.89</span></div>
-              <p class="item-desc">Creamy, rich and thick. Chocolate, vanilla or strawberry.</p>
-            </div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Root Beer Float</span><span class="item-price">$5.39</span></div>
-              <p class="item-desc">A scoop of vanilla ice cream and Barq's root beer.</p>
-            </div>
-          </div>
-        </div>
-      </details>
-
-      <!-- KIDS MENU -->
-      <details class="accordion accordion-kids">
-        <summary class="accordion-header">
-          <span class="acc-title">Kids Menu <em>Ages 12 &amp; Under &middot; Dine-In Only</em></span>
-          <span class="acc-arrow">▾</span>
-        </summary>
-        <div class="accordion-body">
-          <h4 class="sub-section">Breakfast</h4>
-          <div class="menu-grid">
-            <div class="menu-item"><div class="item-top"><span class="item-name">2 Eggs, Hash Browns &amp; Toast</span><span class="item-price">$4.69</span></div></div>
-            <div class="menu-item"><div class="item-top"><span class="item-name">2 Eggs + Pancakes or French Toast</span><span class="item-price">$4.69</span></div></div>
-            <div class="menu-item"><div class="item-top"><span class="item-name">2 Eggs + Meat, Hash Browns &amp; Toast</span><span class="item-price">$5.99</span></div></div>
-            <div class="menu-item">
-              <div class="item-top"><span class="item-name">Kids Breakfast</span><span class="item-price">$5.49</span></div>
-              <p class="item-desc">2 eggs, breakfast meat and pancakes or French toast.</p>
-            </div>
-          </div>
-          <h4 class="sub-section">Lunch &amp; Dinner</h4>
-          <div class="menu-grid">
-            <div class="menu-item"><div class="item-top"><span class="item-name">Chicken Strips &amp; Fries</span><span class="item-price">$5.99</span></div></div>
-            <div class="menu-item"><div class="item-top"><span class="item-name">Hamburger &amp; Fries</span><span class="item-price">$5.99</span></div></div>
-            <div class="menu-item"><div class="item-top"><span class="item-name">Grilled Cheese &amp; Fries</span><span class="item-price">$4.29</span></div></div>
-            <div class="menu-item"><div class="item-top"><span class="item-name">Hot Dog &amp; Fries</span><span class="item-price">$4.29</span></div></div>
-            <div class="menu-item"><div class="item-top"><span class="item-name">3 Pc. Wing Dings &amp; Fries</span><span class="item-price">$5.49</span></div></div>
-            <div class="menu-item"><div class="item-top"><span class="item-name">Fish &amp; Chips</span><span class="item-price">$5.49</span></div><p class="item-desc">Batter-dipped cod with fries.</p></div>
-            <div class="menu-item"><div class="item-top"><span class="item-name">Spaghetti</span><span class="item-price">$5.99</span></div><p class="item-desc">With meat sauce and one piece of garlic bread.</p></div>
-            <div class="menu-item"><div class="item-top"><span class="item-name">Mac &amp; Cheese</span><span class="item-price">$4.59</span></div></div>
-          </div>
-        </div>
-      </details>
-
-      <!-- SIDE ORDERS -->
-      <details class="accordion">
-        <summary class="accordion-header">
-          <span class="acc-title">Side Orders</span>
-          <span class="acc-arrow">▾</span>
-        </summary>
-        <div class="accordion-body">
-          <div class="menu-grid">
-            <div class="menu-item"><div class="item-top"><span class="item-name">Rice Pilaf</span><span class="item-price">$3.99</span></div></div>
-            <div class="menu-item"><div class="item-top"><span class="item-name">French Fries</span><span class="item-price">$3.99</span></div></div>
-            <div class="menu-item"><div class="item-top"><span class="item-name">Sweet Potato Fries</span><span class="item-price">$4.79</span></div></div>
-            <div class="menu-item"><div class="item-top"><span class="item-name">Mashed Potatoes &amp; Gravy</span><span class="item-price">$3.99</span></div></div>
-            <div class="menu-item"><div class="item-top"><span class="item-name">Baked Potato &amp; Sour Cream</span><span class="item-price">$3.99</span></div></div>
-            <div class="menu-item"><div class="item-top"><span class="item-name">Vegetable of the Day</span><span class="item-price">$3.49</span></div></div>
-            <div class="menu-item"><div class="item-top"><span class="item-name">Fruit Cup</span><span class="item-price">$4.99</span></div></div>
-            <div class="menu-item"><div class="item-top"><span class="item-name">Cottage Cheese</span><span class="item-price">$3.59</span></div></div>
-            <div class="menu-item"><div class="item-top"><span class="item-name">Coleslaw</span><span class="item-price">$3.59</span></div></div>
-            <div class="menu-item"><div class="item-top"><span class="item-name">Applesauce</span><span class="item-price">$3.49</span></div></div>
-            <div class="menu-item"><div class="item-top"><span class="item-name">Pita Bread</span><span class="item-price">$1.69</span></div></div>
-            <div class="menu-item"><div class="item-top"><span class="item-name">Greek Bread</span><span class="item-price">$1.69</span></div></div>
-          </div>
-        </div>
-      </details>
-
-    </div><!-- /tab-main -->
-
-    <!-- ===================== CATERING TAB ===================== -->
-    <div class="tab-panel" id="tab-catering">
-      <div class="catering-intro">
-        <p>Planning a party, corporate event, or special gathering? Mimi's Diner offers full catering service. Call us to place your order!</p>
-        <a href="tel:8102319800" class="btn btn-primary">Call (810) 231-9800 to Order</a>
-      </div>
-      <div class="catering-grid">
-        <div class="catering-item">
-          <h3>Greek Salad</h3>
-          <p>Lettuce, tomatoes, feta cheese, chickpeas, beets, peppers &amp; olives. Add grilled chicken +$1.99 each.</p>
-          <div class="catering-price">½ Pan $38 &middot; Full Pan $65</div>
-        </div>
-        <div class="catering-item">
-          <h3>Kebobs</h3>
-          <p>Chunks of beef tenderloin or chicken skewered with green peppers &amp; onions. Add pita +$0.69.</p>
-          <div class="catering-price">Min. 10 &middot; $8.29 each &middot; 20+ $7.99 each</div>
-        </div>
-        <div class="catering-item">
-          <h3>Gyro Platter</h3>
-          <p>Gyro meat or chicken sliced thin with tomatoes &amp; onion, alongside homemade gyro sauce and pita bread.</p>
-          <div class="catering-price">Enough for 20 gyros &middot; $130</div>
-        </div>
-        <div class="catering-item">
-          <h3>Spinach Pie</h3>
-          <p>Homemade with fresh spinach and feta cheese with a touch of onion between our special spice layered flaky phyllo pastry.</p>
-          <div class="catering-price">Full Pan (20 pcs) $100 &middot; 10–19 pcs $6 each</div>
-        </div>
-        <div class="catering-item">
-          <h3>Hummus Platter</h3>
-          <p>Our housemade hummus platter — perfect for any gathering.</p>
-          <div class="catering-price">$45</div>
-        </div>
-        <div class="catering-item">
-          <h3>Baked Mostaccioli</h3>
-          <p>Mostaccioli noodles topped with our special marinara sauce.</p>
-          <div class="catering-price">½ Pan $65 &middot; Full Pan $100</div>
-        </div>
-        <div class="catering-item">
-          <h3>Coneys for a Crowd</h3>
-          <p>You make your own coneys! Includes hot dogs, buns, our delicious chili sauce, and onions.</p>
-          <div class="catering-price">20 Coneys &middot; $65</div>
-        </div>
-        <div class="catering-item">
-          <h3>Rice Pilaf</h3>
-          <p>Seasoned rice with red sauce on the side.</p>
-          <div class="catering-price">½ Pan $38 &middot; Full Pan $60</div>
         </div>
       </div>
-    </div><!-- /tab-catering -->
+    </section>
 
-  </div><!-- /container -->
-</section>
+    <!-- REVIEWS -->
+    <section id="reviews" class="reviews-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>What Our Guests Say</h2>
+          <p>1,000+ reviews on Google &middot; Pinckney's favorite diner</p>
+        </div>
+        <div class="reviews-carousel">
+          <button
+            class="carousel-btn carousel-prev"
+            aria-label="Previous review"
+          >
+            &#8249;
+          </button>
+          <div class="carousel-wrap">
+            <div class="carousel-track">
+              <div class="review-card">
+                <div class="review-quote">&ldquo;</div>
+                <p class="review-text">
+                  My wife and I had breakfast here — the Biscuits and Gravy were
+                  amazing. We came back for dinner and they did not disappoint.
+                  I have been looking for a place with good fish and chips, and
+                  these are the best I've had in a while. Reminds me of going
+                  out to eat with my Grandparents, and those moments are some of
+                  my favorite memories. The food is great, the service is great,
+                  and the atmosphere is perfect.
+                </p>
+                <div class="review-author">
+                  <span class="review-name">Daniel C.</span>
+                  <span class="review-stars">★★★★★</span>
+                </div>
+              </div>
 
-<!-- HOURS & LOCATION -->
-<section id="location" class="location-section">
-  <div class="container">
-    <div class="section-header light">
-      <h2>Hours &amp; Find Us</h2>
-      <p>We'd love to see you — come on in!</p>
-    </div>
-    <div class="location-grid">
-      <div class="location-card">
-        <h3>Hours</h3>
-        <table class="hours-table">
-          <tr><td>Monday</td><td>8:00 am – 8:00 pm</td></tr>
-          <tr><td>Tuesday</td><td>8:00 am – 8:00 pm</td></tr>
-          <tr><td>Wednesday</td><td>8:00 am – 8:00 pm</td></tr>
-          <tr><td>Thursday</td><td>8:00 am – 8:00 pm</td></tr>
-          <tr><td>Friday</td><td>8:00 am – 8:00 pm</td></tr>
-          <tr><td>Saturday</td><td>8:00 am – 8:00 pm</td></tr>
-          <tr><td>Sunday</td><td>8:00 am – 8:00 pm</td></tr>
-        </table>
-        <p class="hours-note">★ Breakfast Specials served Mon–Fri 8–11am</p>
+              <div class="review-card">
+                <div class="review-quote">&ldquo;</div>
+                <p class="review-text">
+                  This is my favorite place to eat when I vacation here. The
+                  food is amazing. The serving staff have all been friendly and
+                  fantastic. On a 5-day vacation, we've gone to Mimi's 4 times.
+                  See you again today for #5!
+                </p>
+                <div class="review-author">
+                  <span class="review-name">Tyler D.</span>
+                  <span class="review-stars">★★★★★</span>
+                </div>
+              </div>
+
+              <div class="review-card">
+                <div class="review-quote">&ldquo;</div>
+                <p class="review-text">
+                  Wonderful staff! Feels like home cooking.
+                </p>
+                <div class="review-author">
+                  <span class="review-name">Drea P.</span>
+                  <span class="review-stars">★★★★★</span>
+                </div>
+              </div>
+
+              <div class="review-card">
+                <div class="review-quote">&ldquo;</div>
+                <p class="review-text">
+                  The waitresses were a lot of fun — very friendly and knew the
+                  menu well. I had the best bread pudding I have ever had. My
+                  husband had the perch and thought it was the best. Will for
+                  sure go again.
+                </p>
+                <div class="review-author">
+                  <span class="review-name">Priscilla L.</span>
+                  <span class="review-stars">★★★★★</span>
+                </div>
+              </div>
+
+              <div class="review-card">
+                <div class="review-quote">&ldquo;</div>
+                <p class="review-text">
+                  Excellent food, very quick service! Their fresh-made Biscuits
+                  &amp; Gravy is <em>Hillbilly Paradise Delicious</em>. OMG. SO
+                  GOOD. The owner is always there keeping things perfect. 🙂
+                </p>
+                <div class="review-author">
+                  <span class="review-name">Chris K.</span>
+                  <span class="review-stars">★★★★★</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-btn carousel-next" aria-label="Next review">
+            &#8250;
+          </button>
+        </div>
+        <div class="carousel-dots">
+          <button class="dot active" aria-label="Go to review 1"></button>
+          <button class="dot" aria-label="Go to review 2"></button>
+          <button class="dot" aria-label="Go to review 3"></button>
+          <button class="dot" aria-label="Go to review 4"></button>
+          <button class="dot" aria-label="Go to review 5"></button>
+        </div>
       </div>
-      <div class="location-card">
-        <h3>Find Us</h3>
-        <address>
-          <p>5589 E M36</p>
-          <p>Pinckney, MI 48169</p>
-        </address>
-        <p class="phone-large"><a href="tel:8102319800">(810) 231-9800</a></p>
-        <a href="https://www.google.com/maps/search/?api=1&query=5589+E+M36+Pinckney+MI+48169" target="_blank" rel="noopener" class="btn btn-primary">Get Directions</a>
+    </section>
+
+    <!-- MENU -->
+    <section id="menu" class="menu-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Menu</h2>
+          <p>Breakfast served anytime &middot; Dine-in &amp; Takeout</p>
+        </div>
+        <div class="tab-bar">
+          <button class="tab-btn active" data-tab="main">Full Menu</button>
+          <button class="tab-btn" data-tab="catering">Catering</button>
+        </div>
+
+        <!-- ===================== MAIN MENU TAB ===================== -->
+        <div class="tab-panel active" id="tab-main">
+          <div class="combo-note">
+            <strong>Make it a Combo!</strong> Most sandwiches, burgers &amp;
+            gyros: add fries or salad or soup + a large soft drink (1 free
+            refill).
+          </div>
+
+          <!-- BREAKFAST -->
+          <details class="accordion" open>
+            <summary class="accordion-header">
+              <span class="acc-title">Breakfast <em>Served Anytime</em></span>
+              <span class="acc-arrow">▾</span>
+            </summary>
+            <div class="accordion-body">
+              <div class="acc-note">
+                Mon–Fri 8–11am: Breakfast Specials available — ask your server!
+              </div>
+
+              <h4 class="sub-section">
+                Hearty Breakfasts
+                <small>with two eggs, hash browns, toast &amp; jelly</small>
+              </h4>
+              <div class="menu-grid">
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">★ Steak &amp; Eggs</span
+                    ><span class="item-price">$17.29</span>
+                  </div>
+                  <p class="item-desc">
+                    Juicy 10 oz New York strip steak grilled to order, served
+                    sizzling.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">★ Hearty Morning Platter</span
+                    ><span class="item-price">$11.99</span>
+                  </div>
+                  <p class="item-desc">
+                    Three eggs, lean ham, two strips of crispy bacon and two
+                    sausages.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Country Fried Steak Breakfast</span
+                    ><span class="item-price">$15.49</span>
+                  </div>
+                  <p class="item-desc">Served with two eggs.</p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Gyro &amp; Eggs</span
+                    ><span class="item-price">$13.29</span>
+                  </div>
+                  <p class="item-desc">
+                    Thin slices of savory gyro meat served with onion and
+                    tomato.
+                  </p>
+                </div>
+              </div>
+
+              <h4 class="sub-section">
+                3-Egg Omelettes
+                <small
+                  >with hash browns, toast &amp; jelly &middot; Add sausage
+                  gravy +$1.99 &middot; Make any a skillet</small
+                >
+              </h4>
+              <div class="menu-grid">
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">★ Meat Lover's</span
+                    ><span class="item-price">$14.59</span>
+                  </div>
+                  <p class="item-desc">
+                    Ham, bacon, sausage and cheddar cheese.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">★ Moe's Omelette</span
+                    ><span class="item-price">$13.69</span>
+                  </div>
+                  <p class="item-desc">
+                    Garden fresh spinach, diced tomato and imported feta cheese.
+                    With gyro meat $14.69.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Mexican</span
+                    ><span class="item-price">$13.99</span>
+                  </div>
+                  <p class="item-desc">
+                    Ham and cheese topped with coney chili sauce, green pepper,
+                    tomato and onion.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">California</span
+                    ><span class="item-price">$13.99</span>
+                  </div>
+                  <p class="item-desc">
+                    Broccoli, cauliflower, zucchini, yellow squash, tomato,
+                    portobello mushrooms and cheddar cheese.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Greek</span
+                    ><span class="item-price">$13.69</span>
+                  </div>
+                  <p class="item-desc">
+                    Feta cheese, green pepper and tomato. With gyro meat $14.69.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Western</span
+                    ><span class="item-price">$12.99</span>
+                  </div>
+                  <p class="item-desc">
+                    Classic combo of ham, green pepper, onion and American
+                    cheese.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Very Veggie</span
+                    ><span class="item-price">$12.99</span>
+                  </div>
+                  <p class="item-desc">
+                    Green pepper, onion, tomato and sliced mushrooms.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Farmer's</span
+                    ><span class="item-price">$13.69</span>
+                  </div>
+                  <p class="item-desc">
+                    Sautéed ham, green pepper, onion, hash browns and plenty of
+                    Swiss cheese.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Corned Beef Hash Omelette</span
+                    ><span class="item-price">$14.29</span>
+                  </div>
+                  <p class="item-desc">With Swiss cheese.</p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Meat &amp; Cheese</span
+                    ><span class="item-price">$12.39</span>
+                  </div>
+                  <p class="item-desc">Ham, bacon or sausage and cheese.</p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Mushroom &amp; Swiss</span
+                    ><span class="item-price">$12.39</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Cheese Omelette</span
+                    ><span class="item-price">$9.99</span>
+                  </div>
+                </div>
+              </div>
+
+              <h4 class="sub-section">From the Egg Basket</h4>
+              <div class="menu-grid">
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Two Eggs with Toast</span
+                    ><span class="item-price">$5.79</span>
+                  </div>
+                  <p class="item-desc">
+                    With hash browns $6.99 &middot; With meat $7.79 &middot;
+                    With meat &amp; hash browns $8.99
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">★ Biscuits &amp; Gravy</span
+                    ><span class="item-price">$7.99</span>
+                  </div>
+                  <p class="item-desc">
+                    Two biscuits topped with sausage gravy. One biscuit $5.29.
+                    Add two eggs +$2.69.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">★ Sausage Gravy</span
+                    ><span class="item-price">Cup $4.79 / Bowl $6.99</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Corned Beef Hash</span
+                    ><span class="item-price">$8.79</span>
+                  </div>
+                  <p class="item-desc">With two eggs, toast and jelly.</p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">★ Breakfast Sandwich</span
+                    ><span class="item-price">$4.99</span>
+                  </div>
+                  <p class="item-desc">
+                    Fried egg with sausage, ham or bacon + American cheese on
+                    toast, English muffin or bagel. Make it a Wrap +$6.49.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Eggs Benedict</span
+                    ><span class="item-price">$11.99</span>
+                  </div>
+                  <p class="item-desc">
+                    Dearborn ham, poached eggs, hollandaise sauce on an English
+                    muffin with hash browns.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Avocado Toast</span
+                    ><span class="item-price">$10.99</span>
+                  </div>
+                  <p class="item-desc">
+                    Fresh avocado mashed with lemon on Greek toast with two
+                    scrambled eggs.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Greek Avocado Toast</span
+                    ><span class="item-price">$11.99</span>
+                  </div>
+                  <p class="item-desc">
+                    Avocado toast with diced tomato, onion, feta cheese and
+                    balsamic reduction glaze.
+                  </p>
+                </div>
+              </div>
+
+              <h4 class="sub-section">Hot Off the Griddle</h4>
+              <div class="menu-grid">
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">★ Hodge's Trio</span
+                    ><span class="item-price">$11.29</span>
+                  </div>
+                  <p class="item-desc">
+                    Choice of breakfast meat and two eggs + one of: 3 Golden
+                    Pancakes, 8 Silver Dollar Pancakes, Full French Toast, or 1
+                    Belgian Waffle.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">★ Nora's Favorite</span
+                    ><span class="item-price">$9.99</span>
+                  </div>
+                  <p class="item-desc">
+                    Half order of pancakes or French toast with your choice of
+                    meat and two eggs.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Three Golden Pancakes</span
+                    ><span class="item-price">$8.99</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Half Order of Pancakes</span
+                    ><span class="item-price">$6.99</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">8 Silver Dollar Pancakes</span
+                    ><span class="item-price">$8.99</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">French Toast</span
+                    ><span class="item-price">$8.99</span>
+                  </div>
+                  <p class="item-desc">Half order $6.99.</p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Belgian Waffle (plain)</span
+                    ><span class="item-price">$8.99</span>
+                  </div>
+                  <p class="item-desc">Available daily until 2pm.</p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Cinnamon Raisin French Toast</span
+                    ><span class="item-price">$9.99</span>
+                  </div>
+                  <p class="item-desc">
+                    Half order $8.99. Add eggs +$2.69 &middot; Add meat +$3.99
+                    &middot; Add banana, pecans, walnuts, blueberries, choc
+                    chips or fruit topping +$1.59.
+                  </p>
+                </div>
+              </div>
+
+              <h4 class="sub-section">Breakfast Sides</h4>
+              <div class="menu-grid">
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Ham, Bacon or Sausage</span
+                    ><span class="item-price">$4.99</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Hash Browns</span
+                    ><span class="item-price">$4.99</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">English Muffin</span
+                    ><span class="item-price">$2.29</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Cinnamon Raisin Toast</span
+                    ><span class="item-price">$2.99</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Bagel with Cream Cheese</span
+                    ><span class="item-price">$3.79</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Greek Toast</span
+                    ><span class="item-price">$2.99</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Bowl of Oatmeal</span
+                    ><span class="item-price">$5.29</span>
+                  </div>
+                  <p class="item-desc">
+                    With milk, brown sugar and raisins. Add fresh fruit or nuts
+                    +$1.29.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Toast &amp; Jelly</span
+                    ><span class="item-price">$1.99</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Two Biscuits</span
+                    ><span class="item-price">$3.99</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Fruit Cup</span
+                    ><span class="item-price">$4.99</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </details>
+
+          <!-- APPETIZERS -->
+          <details class="accordion">
+            <summary class="accordion-header">
+              <span class="acc-title">Appetizers</span>
+              <span class="acc-arrow">▾</span>
+            </summary>
+            <div class="accordion-body">
+              <div class="menu-grid">
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">★ Sampler Platter</span
+                    ><span class="item-price">$13.69</span>
+                  </div>
+                  <p class="item-desc">
+                    Mozzarella cheese stix, cheese-stuffed jalapeño peppers and
+                    golden chicken fingers. Great for sharing!
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">★ Saganaki</span
+                    ><span class="item-price">$10.29</span>
+                  </div>
+                  <p class="item-desc">
+                    Imported Kasseri cheese flamed tableside. Opa! Served with
+                    fresh pita.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">★ Spinach Pie (Spanakopita)</span
+                    ><span class="item-price">$6.99</span>
+                  </div>
+                  <p class="item-desc">
+                    Thin layers of phyllo pastry filled with fresh spinach, feta
+                    cheese and special seasonings. With a small Greek salad
+                    $10.59.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Hummus</span
+                    ><span class="item-price">$8.79</span>
+                  </div>
+                  <p class="item-desc">
+                    Ground chickpeas with tahini and select spices served with
+                    fresh pita.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Chicken Fingers</span
+                    ><span class="item-price">$9.29</span>
+                  </div>
+                  <p class="item-desc">
+                    Five tender breaded chicken breast strips.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Mozzarella Cheese Stix (6)</span
+                    ><span class="item-price">$8.29</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Fried Mushrooms</span
+                    ><span class="item-price">$8.29</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Wing Dings</span
+                    ><span class="item-price"
+                      >5/$7.59 &middot; 10/$10.99 &middot; 15/$15.29</span
+                    >
+                  </div>
+                  <p class="item-desc">
+                    Meaty lightly breaded wings. Plain, buffalo or BBQ sauce.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Stuffed Jalapeño Poppers (6)</span
+                    ><span class="item-price">$7.79</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Stuffed Grape Leaves</span
+                    ><span class="item-price">$8.79</span>
+                  </div>
+                  <p class="item-desc">
+                    Vegetarian! Six stuffed grape leaves served chilled with
+                    fresh pita bread.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Broccoli Cheese Bites (6)</span
+                    ><span class="item-price">$8.79</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Potato Skins (4)</span
+                    ><span class="item-price">$8.19</span>
+                  </div>
+                  <p class="item-desc">
+                    With cheddar cheese, bacon and a side of sour cream.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Fried Zucchini</span
+                    ><span class="item-price">$8.19</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Onion Rings</span
+                    ><span class="item-price">$5.79</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </details>
+
+          <!-- SOUPS -->
+          <details class="accordion">
+            <summary class="accordion-header">
+              <span class="acc-title">Soups</span>
+              <span class="acc-arrow">▾</span>
+            </summary>
+            <div class="accordion-body">
+              <div class="menu-grid">
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Lemon Rice Soup</span
+                    ><span class="item-price">Cup $4.79 / Bowl $6.29</span>
+                  </div>
+                  <p class="item-desc">A velvety rich Greek favorite.</p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Soup of the Day</span
+                    ><span class="item-price">Cup $4.79 / Bowl $6.29</span>
+                  </div>
+                  <p class="item-desc">
+                    Ask what's cookin' today! Quart to take home $10.29.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </details>
+
+          <!-- SALADS -->
+          <details class="accordion">
+            <summary class="accordion-header">
+              <span class="acc-title">Fresh Salads</span>
+              <span class="acc-arrow">▾</span>
+            </summary>
+            <div class="accordion-body">
+              <div class="acc-note">Add fresh pita bread +$0.79</div>
+              <div class="menu-grid">
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">★ Great Greek Salad</span
+                    ><span class="item-price"
+                      >Sm $5.79 / Med $9.99 / Lg $14.99</span
+                    >
+                  </div>
+                  <p class="item-desc">
+                    Crisp greens, sliced tomato, feta cheese, chickpeas, beets,
+                    Greek olives and peppers with housemade Greek dressing.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">★ Maurice Salad</span
+                    ><span class="item-price">$13.99</span>
+                  </div>
+                  <p class="item-desc">
+                    Turkey, ham, Swiss and American cheeses, tomato, egg slices,
+                    stuffed green olives and Gherkin pickles with Hudson's
+                    Maurice dressing.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">★ Grilled Chicken Greek Salad</span
+                    ><span class="item-price">$13.99</span>
+                  </div>
+                  <p class="item-desc">
+                    Fresh marinated chicken breast grilled and sliced atop crisp
+                    lettuce, tomato, chickpeas, Greek olives, feta and peppers
+                    with housemade Greek dressing.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Crispy Chicken Salad</span
+                    ><span class="item-price">$13.99</span>
+                  </div>
+                  <p class="item-desc">
+                    Sliced crispy chicken tenders with bacon, tomatoes and
+                    shredded cheese over lettuce blend.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Chicken Caesar Salad</span
+                    ><span class="item-price">$12.99</span>
+                  </div>
+                  <p class="item-desc">
+                    Marinated chicken breast with romaine lettuce, croutons,
+                    Parmesan cheese and Caesar dressing.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">★ California Salad</span
+                    ><span class="item-price">$14.99</span>
+                  </div>
+                  <p class="item-desc">
+                    Grilled chicken, romaine lettuce, cucumbers, dried
+                    cranberries, walnuts, crumbled bleu cheese, tomatoes and
+                    raspberry vinaigrette. With salmon $16.79.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name"
+                      >Chicken Pecan or Tuna Salad Plate</span
+                    ><span class="item-price">$11.59</span>
+                  </div>
+                  <p class="item-desc">
+                    Fresh made chicken pecan or tuna salad with a hard-boiled
+                    egg, tomato, Swiss and American cheeses and coleslaw on a
+                    lettuce leaf.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Garden Salad</span
+                    ><span class="item-price">$4.99</span>
+                  </div>
+                  <p class="item-desc">
+                    Crisp lettuce, tomato, shredded cheese, cucumber and
+                    croutons.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Side Caesar Salad</span
+                    ><span class="item-price">$5.19</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </details>
+
+          <!-- SANDWICHES -->
+          <details class="accordion">
+            <summary class="accordion-header">
+              <span class="acc-title">Sandwiches</span>
+              <span class="acc-arrow">▾</span>
+            </summary>
+            <div class="accordion-body">
+              <div class="menu-grid">
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Grilled Chicken Breast</span
+                    ><span class="item-price">$7.59</span>
+                  </div>
+                  <p class="item-desc">
+                    5 oz. fresh chicken marinated and grilled on an onion roll
+                    with lettuce, tomato and mayo.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Grilled Ham &amp; Cheese</span
+                    ><span class="item-price">$6.99</span>
+                  </div>
+                  <p class="item-desc">
+                    Three thick slices of lean ham with American cheese grilled
+                    on white bread.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Fish Sandwich</span
+                    ><span class="item-price">$9.99</span>
+                  </div>
+                  <p class="item-desc">
+                    Hand-battered Atlantic cod (two-piece) on a seeded bun.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">BLT</span
+                    ><span class="item-price">$7.59</span>
+                  </div>
+                  <p class="item-desc">
+                    Crisp bacon, lettuce, tomato and mayo.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Grilled Cheese</span
+                    ><span class="item-price">$5.39</span>
+                  </div>
+                  <p class="item-desc">On Texas toast.</p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">★ Club Sandwich</span
+                    ><span class="item-price">$10.29</span>
+                  </div>
+                  <p class="item-desc">
+                    Triple decker stacked with turkey, bacon, lettuce, tomato
+                    and mayo on toasted white bread.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </details>
+
+          <!-- BURGERS -->
+          <details class="accordion">
+            <summary class="accordion-header">
+              <span class="acc-title">Burgers</span>
+              <span class="acc-arrow">▾</span>
+            </summary>
+            <div class="accordion-body">
+              <div class="acc-note">All patties are 1/4 lb.</div>
+              <div class="menu-grid">
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">★ Moe's Burger</span
+                    ><span class="item-price">$9.79</span>
+                  </div>
+                  <p class="item-desc">
+                    Two all-beef patties, two slices of melted cheese, grilled
+                    onion, lettuce, pickle and tomato. Add crisp bacon +$1.59.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Double Bacon Cheeseburger</span
+                    ><span class="item-price">$9.79</span>
+                  </div>
+                  <p class="item-desc">
+                    Two 1/4 lb. patties with bacon, melted cheese, lettuce,
+                    tomato and pickle.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Bacon Cheeseburger</span
+                    ><span class="item-price">$7.59</span>
+                  </div>
+                  <p class="item-desc">
+                    Crisp bacon, melted cheese, lettuce, tomato and pickle.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Mushroom Swiss Burger</span
+                    ><span class="item-price">$7.99</span>
+                  </div>
+                  <p class="item-desc">
+                    Melted Swiss cheese, sautéed sliced mushrooms, pickle,
+                    lettuce and tomato.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Burger</span
+                    ><span class="item-price">$6.79</span>
+                  </div>
+                  <p class="item-desc">
+                    With lettuce, tomato and pickle. With melted cheese $6.99.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Olive Burger</span
+                    ><span class="item-price">$6.99</span>
+                  </div>
+                  <p class="item-desc">
+                    Dressed with lettuce, tomato, pickle and olive mayo sauce.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">BBQ Cheddar Burger</span
+                    ><span class="item-price">$8.99</span>
+                  </div>
+                  <p class="item-desc">
+                    BBQ sauce, lettuce and tomatoes, topped with onion rings.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Tony's Burger</span
+                    ><span class="item-price">$9.49</span>
+                  </div>
+                  <p class="item-desc">
+                    Two burger patties topped with marinara sauce, mozzarella
+                    cheese sticks and Swiss cheese.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </details>
+
+          <!-- SUPER SANDWICHES & MELTS -->
+          <details class="accordion">
+            <summary class="accordion-header">
+              <span class="acc-title">Super Sandwiches &amp; Melts</span>
+              <span class="acc-arrow">▾</span>
+            </summary>
+            <div class="accordion-body">
+              <div class="acc-note">
+                Super Sandwiches served on a panini bun &middot; Melts served on
+                grilled rye &middot; Add bacon +$1.59
+              </div>
+              <div class="menu-grid">
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">★ Philly Steak</span
+                    ><span class="item-price">$10.49</span>
+                  </div>
+                  <p class="item-desc">
+                    Choice steak (6.5 oz.) sliced thin, sautéed with green
+                    pepper, onion and mushrooms. Topped with melted Swiss
+                    cheese.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">The Maggie</span
+                    ><span class="item-price">$9.59</span>
+                  </div>
+                  <p class="item-desc">
+                    Marinated sliced chicken breast sautéed with green pepper,
+                    onion and mushrooms topped with melted Swiss cheese.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">French Dip</span
+                    ><span class="item-price">$9.59</span>
+                  </div>
+                  <p class="item-desc">
+                    Thin slices of roast sirloin with melted Swiss cheese.
+                    Served with au jus.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Slim Betty</span
+                    ><span class="item-price">$8.99</span>
+                  </div>
+                  <p class="item-desc">
+                    Thinly sliced turkey grilled and topped with Swiss cheese,
+                    lettuce, tomato and mayo.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Big Barney</span
+                    ><span class="item-price">$8.99</span>
+                  </div>
+                  <p class="item-desc">
+                    Ham, Swiss cheese, lettuce, tomato and mayo.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Chicken Parmesan Sandwich</span
+                    ><span class="item-price">$9.99</span>
+                  </div>
+                  <p class="item-desc">
+                    Marinated chicken breast with marinara sauce and mozzarella
+                    cheese on ciabatta bread.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">NY Strip Steak Sandwich</span
+                    ><span class="item-price">$17.49</span>
+                  </div>
+                  <p class="item-desc">
+                    A juicy 10 oz NY strip steak grilled to order, topped with
+                    grilled onions and green peppers.
+                  </p>
+                </div>
+              </div>
+              <h4 class="sub-section">The Melts</h4>
+              <div class="menu-grid">
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Turkey &amp; Swiss Melt</span
+                    ><span class="item-price">$8.59</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Chicken Tender Melt</span
+                    ><span class="item-price">$7.99</span>
+                  </div>
+                  <p class="item-desc">
+                    Blanketed with melted Swiss and American cheeses.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Tuna &amp; Swiss Melt</span
+                    ><span class="item-price">$8.99</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Patty Melt</span
+                    ><span class="item-price">$7.59</span>
+                  </div>
+                  <p class="item-desc">
+                    Quarter-pound burger with grilled onion and Swiss cheese.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </details>
+
+          <!-- WRAPS -->
+          <details class="accordion">
+            <summary class="accordion-header">
+              <span class="acc-title">Wraps</span>
+              <span class="acc-arrow">▾</span>
+            </summary>
+            <div class="accordion-body">
+              <div class="menu-grid">
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Club Wrap</span
+                    ><span class="item-price">$10.29</span>
+                  </div>
+                  <p class="item-desc">
+                    Turkey, bacon, lettuce, tomatoes and mayo.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Chicken Caesar Wrap</span
+                    ><span class="item-price">$8.99</span>
+                  </div>
+                  <p class="item-desc">
+                    Marinated chicken breast, romaine lettuce and Caesar
+                    dressing.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Tuna &amp; Swiss Wrap</span
+                    ><span class="item-price">$8.69</span>
+                  </div>
+                  <p class="item-desc">
+                    Homemade tuna salad with lettuce, tomatoes and Swiss cheese.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Chicken Salad Pecan Wrap</span
+                    ><span class="item-price">$8.99</span>
+                  </div>
+                  <p class="item-desc">
+                    Chicken salad, pecans, dried cranberries, lettuce and
+                    tomatoes.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Hani Wrap</span
+                    ><span class="item-price">$8.69</span>
+                  </div>
+                  <p class="item-desc">
+                    Chicken strips, lettuce, tomatoes, Swiss and American
+                    cheeses with your choice of sauce.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Grilled Chicken Wrap</span
+                    ><span class="item-price">$8.59</span>
+                  </div>
+                  <p class="item-desc">
+                    Grilled or crispy chicken with lettuce, tomatoes and onions.
+                    With hummus or buffalo style with bleu cheese $9.29.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </details>
+
+          <!-- GYROS & QUESADILLAS -->
+          <details class="accordion">
+            <summary class="accordion-header">
+              <span class="acc-title">Gyros &amp; Quesadillas</span>
+              <span class="acc-arrow">▾</span>
+            </summary>
+            <div class="accordion-body">
+              <h4 class="sub-section">Authentic Gyros</h4>
+              <div class="menu-grid">
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">★ Gyro Supreme</span
+                    ><span class="item-price">$8.99</span>
+                  </div>
+                  <p class="item-desc">
+                    Seasoned lamb and beef blend sliced thin in fresh pita with
+                    feta cheese, diced tomato, lettuce, onion and housemade gyro
+                    sauce.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Gyro</span
+                    ><span class="item-price">$8.79</span>
+                  </div>
+                  <p class="item-desc">
+                    Slices of seasoned lamb and beef in fresh pita with onion,
+                    tomato and housemade gyro sauce.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Chicken Gyro Supreme</span
+                    ><span class="item-price">$8.79</span>
+                  </div>
+                  <p class="item-desc">
+                    Seasoned broiled chicken breast in fresh pita with feta
+                    cheese, diced tomato, lettuce, onion and housemade gyro
+                    sauce.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Chicken Gyro</span
+                    ><span class="item-price">$8.59</span>
+                  </div>
+                  <p class="item-desc">
+                    Seasoned sliced chicken breast in fresh pita with onion,
+                    lettuce, tomato and fresh housemade gyro sauce.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Turkey &amp; Swiss Gyro</span
+                    ><span class="item-price">$8.59</span>
+                  </div>
+                  <p class="item-desc">
+                    Hot roast turkey, Swiss cheese, onion, lettuce and tomato
+                    with housemade gyro sauce in fresh pita.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">★ Beef or Chicken Kebob Wrap</span
+                    ><span class="item-price"
+                      >Beef $11.99 / Chicken $11.49</span
+                    >
+                  </div>
+                  <p class="item-desc">
+                    Marinated tender beef or chicken grilled with garden
+                    veggies, tomatoes and onions with homemade gyro sauce in a
+                    pita.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Ham &amp; Cheese Gyro</span
+                    ><span class="item-price">$8.59</span>
+                  </div>
+                  <p class="item-desc">
+                    Lean ham with Swiss cheese, tomato, onion and lettuce sided
+                    with gyro sauce in fresh pita.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">California Gyro</span
+                    ><span class="item-price">$8.99</span>
+                  </div>
+                  <p class="item-desc">
+                    Grilled portobello mushrooms, broccoli, green pepper and
+                    onion with melted cheddar, lettuce, tomato and gyro sauce.
+                    Add grilled chicken +$1.99.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Hani Gyro</span
+                    ><span class="item-price">$8.69</span>
+                  </div>
+                  <p class="item-desc">
+                    Sliced chicken tenders fried to a golden crisp with Swiss
+                    and American cheeses, lettuce, tomato and your choice of
+                    sauce.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Vegetarian Gyro</span
+                    ><span class="item-price">$6.99</span>
+                  </div>
+                  <p class="item-desc">
+                    Feta cheese, tomato, lettuce and onion with gyro sauce in
+                    fresh pita.
+                  </p>
+                </div>
+              </div>
+              <h4 class="sub-section">
+                Quesadillas
+                <small
+                  >Served with lettuce and tomato &middot; Make it a combo
+                  +$4.79</small
+                >
+              </h4>
+              <div class="menu-grid">
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Greek Quesadilla</span
+                    ><span class="item-price">$12.59</span>
+                  </div>
+                  <p class="item-desc">
+                    Grilled tortilla stuffed with gyro meat, feta cheese,
+                    tomatoes and onions. Served with gyro sauce.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Cheese Quesadilla</span
+                    ><span class="item-price">$9.79</span>
+                  </div>
+                  <p class="item-desc">
+                    Grilled tortilla stuffed with melted cheese, green peppers
+                    and onions. Served with sour cream and salsa.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Chicken Quesadilla</span
+                    ><span class="item-price">$12.59</span>
+                  </div>
+                  <p class="item-desc">
+                    Grilled tortilla stuffed with melted cheese, grilled chicken
+                    strips, green peppers and onions.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Steak Quesadilla</span
+                    ><span class="item-price">$13.59</span>
+                  </div>
+                  <p class="item-desc">
+                    Grilled tortilla stuffed with melted cheese, thinly sliced
+                    steak, green peppers and onions.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </details>
+
+          <!-- CONEY ISLAND -->
+          <details class="accordion">
+            <summary class="accordion-header">
+              <span class="acc-title">Coney Island</span>
+              <span class="acc-arrow">▾</span>
+            </summary>
+            <div class="accordion-body">
+              <div class="menu-grid">
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Coney Island Hot Dog</span
+                    ><span class="item-price">$3.99</span>
+                  </div>
+                  <p class="item-desc">
+                    Juicy hot dog topped with meaty chili, mustard and onion.
+                    With melted cheese $4.29.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Coney Special</span
+                    ><span class="item-price">$5.09</span>
+                  </div>
+                  <p class="item-desc">
+                    Hot dog with loose hamburger, chili, mustard and onion. With
+                    melted cheese $5.59.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Loose Hamburger</span
+                    ><span class="item-price">$4.29</span>
+                  </div>
+                  <p class="item-desc">
+                    Ground beef on a hot dog bun with chili, mustard and onion.
+                    With melted cheese $4.79.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Coney-Style Chili</span
+                    ><span class="item-price">Cup $4.59 / Bowl $6.09</span>
+                  </div>
+                  <p class="item-desc">
+                    Add hamburger meat: Cup $5.69 / Bowl $7.09.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Chili Cheese Fries</span
+                    ><span class="item-price">$5.29</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Chili Fries</span
+                    ><span class="item-price">$4.69</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Cheese Fries</span
+                    ><span class="item-price">$4.59</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">French Fries</span
+                    ><span class="item-price">$4.29</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </details>
+
+          <!-- FROM THE DELI -->
+          <details class="accordion">
+            <summary class="accordion-header">
+              <span class="acc-title">From the Deli</span>
+              <span class="acc-arrow">▾</span>
+            </summary>
+            <div class="accordion-body">
+              <div class="menu-grid">
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">★ Reuben</span
+                    ><span class="item-price">$9.49</span>
+                  </div>
+                  <p class="item-desc">
+                    House-cooked corned beef with Swiss cheese and tangy
+                    sauerkraut on grilled rye, with a side of Thousand Island.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Turkey Reuben</span
+                    ><span class="item-price">$9.49</span>
+                  </div>
+                  <p class="item-desc">
+                    Roast turkey breast with melted Swiss cheese and coleslaw on
+                    grilled rye. Sided with Thousand Island.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Roast Beef Sandwich</span
+                    ><span class="item-price">$8.49</span>
+                  </div>
+                  <p class="item-desc">
+                    Stacked high on a sub bun with lettuce, tomatoes and
+                    horseradish sauce.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Corned Beef on Rye</span
+                    ><span class="item-price">$8.99</span>
+                  </div>
+                  <p class="item-desc">
+                    House-cooked corned beef — the best tasting corned beef in
+                    town!
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Turkey Breast</span
+                    ><span class="item-price">$8.69</span>
+                  </div>
+                  <p class="item-desc">
+                    Deli turkey with lettuce, tomato and mayo on a panini sub
+                    bun.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Tuna Salad Sandwich</span
+                    ><span class="item-price">$8.49</span>
+                  </div>
+                  <p class="item-desc">
+                    Creamy and delicious! Served on toast.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Chicken Pecan Salad Sandwich</span
+                    ><span class="item-price">$8.99</span>
+                  </div>
+                  <p class="item-desc">
+                    Chicken salad with pecans, dried cranberries, lettuce and
+                    tomatoes.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </details>
+
+          <!-- GREEK DINNER SPECIALTIES -->
+          <details class="accordion">
+            <summary class="accordion-header">
+              <span class="acc-title">Greek Dinner Specialties</span>
+              <span class="acc-arrow">▾</span>
+            </summary>
+            <div class="accordion-body">
+              <div class="acc-note">
+                Authentic taste! Served with your choice of two dinner sides and
+                fresh baked Greek bread &amp; butter. Add 3rd side +$2.99.
+              </div>
+              <div class="menu-grid">
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">★ Beef or Chicken Kebob</span
+                    ><span class="item-price">$17.29</span>
+                  </div>
+                  <p class="item-desc">
+                    Fresh chicken breast or beef tenderloin skewered with green
+                    pepper and onion, grilled to perfection.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">★ Chicken Breast Dinner</span
+                    ><span class="item-price">$16.99</span>
+                  </div>
+                  <p class="item-desc">
+                    Tender and juicy marinated chicken breast grilled
+                    Greek-style with lemon and oregano seasonings.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Chicken with Hummus Dinner</span
+                    ><span class="item-price">$16.99</span>
+                  </div>
+                  <p class="item-desc">
+                    Grilled chicken breast sliced and served on a bed of hummus
+                    topped with tomato, onion and sided with housemade gyro
+                    sauce and pita bread.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Greek Trio</span
+                    ><span class="item-price">$16.99</span>
+                  </div>
+                  <p class="item-desc">
+                    Moussaka, spinach pie, a stuffed grape leaf and your choice
+                    of sliced gyro meat or sliced chicken breast.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Gyro or Chicken Gyro Plate</span
+                    ><span class="item-price">$16.99</span>
+                  </div>
+                  <p class="item-desc">
+                    Gyro (seasoned lamb and beef) or chicken breast, sliced thin
+                    with tomatoes, onions, gyro sauce and fresh pita bread.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Lamb Shank</span
+                    ><span class="item-price">$20.99</span>
+                  </div>
+                  <p class="item-desc">
+                    A tender savory choice carefully baked in tomato sauce.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">★ Housemade Spinach Pie Dinner</span
+                    ><span class="item-price">$14.99</span>
+                  </div>
+                  <p class="item-desc">
+                    Fresh spinach and feta cheese with our own blend of spices,
+                    layered between flaky Greek phyllo pastry. Served piping
+                    hot.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Moussaka</span
+                    ><span class="item-price">$16.99</span>
+                  </div>
+                  <p class="item-desc">
+                    Sliced eggplant layered with specially seasoned ground beef,
+                    baked to perfection.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </details>
+
+          <!-- DINNER -->
+          <details class="accordion">
+            <summary class="accordion-header">
+              <span class="acc-title">Dinner</span>
+              <span class="acc-arrow">▾</span>
+            </summary>
+            <div class="accordion-body">
+              <div class="acc-note">
+                Served with your choice of two dinner sides and fresh baked
+                Greek bread &amp; butter. Add 3rd side +$2.99.
+              </div>
+              <div class="menu-grid">
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Country Fried Steak</span
+                    ><span class="item-price">$15.49</span>
+                  </div>
+                  <p class="item-desc">Served with country gravy.</p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Chopped Sirloin 10 oz.</span
+                    ><span class="item-price">$16.69</span>
+                  </div>
+                  <p class="item-desc">
+                    Chopped sirloin cooked to order with plenty of sautéed
+                    mushrooms and onion.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Chicken Finger Dinner</span
+                    ><span class="item-price">$16.99</span>
+                  </div>
+                  <p class="item-desc">Five chicken fingers.</p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Wing Ding Dinner</span
+                    ><span class="item-price">$15.99</span>
+                  </div>
+                  <p class="item-desc">
+                    Eight meaty wings fried to perfection. Plain, buffalo, BBQ
+                    or garlic butter sauce.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">New York Strip Steak 10 oz.</span
+                    ><span class="item-price">$18.99</span>
+                  </div>
+                  <p class="item-desc">
+                    Ten ounces of tender NY strip cooked to order. Add
+                    deep-fried jumbo shrimp +$2.50 each.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Center-Cut Pork Chops (2)</span
+                    ><span class="item-price">$16.99</span>
+                  </div>
+                  <p class="item-desc">
+                    Grilled to perfection. With applesauce.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Meatloaf</span
+                    ><span class="item-price">$16.49</span>
+                  </div>
+                  <p class="item-desc">
+                    Made with a blend of Greek herbs and spices.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Liver &amp; Onions</span
+                    ><span class="item-price">$15.59</span>
+                  </div>
+                  <p class="item-desc">
+                    Grilled beef liver served with sautéed onion.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Veal Cutlet</span
+                    ><span class="item-price">$14.99</span>
+                  </div>
+                  <p class="item-desc">
+                    Two tender breaded veal patties with beef gravy.
+                  </p>
+                </div>
+              </div>
+              <h4 class="sub-section">
+                Stir-Fry Dinner
+                <small
+                  >with one dinner side and fresh baked Greek bread &amp;
+                  butter</small
+                >
+              </h4>
+              <div class="menu-grid">
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">★ Vegetable Stir-Fry</span
+                    ><span class="item-price">$14.99</span>
+                  </div>
+                  <p class="item-desc">
+                    Garden fresh assortment of vegetables, seasoned with
+                    teriyaki and soy sauce. Served steaming over rice pilaf.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">★ Sliced NY Strip Stir-Fry</span
+                    ><span class="item-price">$17.99</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">★ Succulent Shrimp Stir-Fry</span
+                    ><span class="item-price">$17.99</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">★ Sliced Chicken Stir-Fry</span
+                    ><span class="item-price">$16.99</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name"
+                      >★ Chicken &amp; Shrimp Combo Stir-Fry</span
+                    ><span class="item-price">$21.99</span>
+                  </div>
+                </div>
+              </div>
+              <h4 class="sub-section">
+                Homemade Hearty Hot Sandwiches
+                <small>with two dinner sides</small>
+              </h4>
+              <div class="menu-grid">
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Hot Turkey</span
+                    ><span class="item-price">$15.29</span>
+                  </div>
+                  <p class="item-desc">Pure natural goodness!</p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Hot Beef</span
+                    ><span class="item-price">$15.29</span>
+                  </div>
+                  <p class="item-desc">Home-style eye of round.</p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Hot Meatloaf</span
+                    ><span class="item-price">$15.29</span>
+                  </div>
+                  <p class="item-desc">
+                    Made with a blend of Greek herbs and spices.
+                  </p>
+                </div>
+              </div>
+              <h4 class="sub-section">Dinner Sides</h4>
+              <p class="side-list">
+                French Fries &middot; Baked Potato &middot; Mashed Potatoes
+                &middot; Coleslaw &middot; Sweet Potato Fries &middot; Rice
+                Pilaf &middot; Vegetable of the Day &middot; Soup &middot;
+                Greek, Caesar or Garden Salad &middot; Cottage Cheese &middot;
+                Applesauce
+              </p>
+            </div>
+          </details>
+
+          <!-- SEAFOOD -->
+          <details class="accordion">
+            <summary class="accordion-header">
+              <span class="acc-title">Seafood</span>
+              <span class="acc-arrow">▾</span>
+            </summary>
+            <div class="accordion-body">
+              <div class="acc-note">
+                Served with your choice of two dinner sides and fresh baked
+                Greek bread &amp; butter. Add 3rd side +$2.99.
+              </div>
+              <div class="menu-grid">
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Pan-Fried Walleye</span
+                    ><span class="item-price">$19.99</span>
+                  </div>
+                  <p class="item-desc">
+                    Delicate walleye fillet lightly breaded with pretzel crumbs,
+                    served with honey-mustard.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Broiled Alaskan Salmon</span
+                    ><span class="item-price">$18.99</span>
+                  </div>
+                  <p class="item-desc">Marinated with a teriyaki glaze.</p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Fish &amp; Chips</span
+                    ><span class="item-price">$16.89</span>
+                  </div>
+                  <p class="item-desc">
+                    Flaky Atlantic cod hand-dipped in batter, deep-fried golden.
+                    Served with fries and one additional side.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Fried Jumbo Shrimp</span
+                    ><span class="item-price">$18.59</span>
+                  </div>
+                  <p class="item-desc">Eight shrimp, freshly battered.</p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Fresh Lake Perch</span
+                    ><span class="item-price">$18.49</span>
+                  </div>
+                  <p class="item-desc">Our batter-dipped perch is delicious!</p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Broiled Cod</span
+                    ><span class="item-price">$18.99</span>
+                  </div>
+                  <p class="item-desc">
+                    North Atlantic cod loin lightly seasoned and broiled.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </details>
+
+          <!-- PASTA -->
+          <details class="accordion">
+            <summary class="accordion-header">
+              <span class="acc-title">Pasta</span>
+              <span class="acc-arrow">▾</span>
+            </summary>
+            <div class="accordion-body">
+              <div class="acc-note">
+                Served with your choice of one dinner side, fresh baked garlic
+                bread &amp; butter. Add 2nd side +$2.99.
+              </div>
+              <div class="menu-grid">
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name"
+                      >Penne or Spaghetti with Marinara</span
+                    ><span class="item-price">$13.59</span>
+                  </div>
+                  <p class="item-desc">
+                    Your choice of pasta with marinara sauce. Add meat sauce
+                    +$2.50.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Chicken Parmesan</span
+                    ><span class="item-price">$16.99</span>
+                  </div>
+                  <p class="item-desc">
+                    Breaded chicken topped with mozzarella cheese. Served with
+                    spaghetti and marinara sauce.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Greek Pasta</span
+                    ><span class="item-price">$16.99</span>
+                  </div>
+                  <p class="item-desc">
+                    Sliced chicken breast, onions and tomatoes sautéed in our
+                    own Greek dressing with penne pasta, feta and cheddar
+                    cheese.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Veal Parmesan</span
+                    ><span class="item-price">$14.99</span>
+                  </div>
+                  <p class="item-desc">
+                    Breaded veal topped with mozzarella cheese. Served with
+                    spaghetti and marinara sauce.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </details>
+
+          <!-- DESSERTS -->
+          <details class="accordion">
+            <summary class="accordion-header">
+              <span class="acc-title">Desserts</span>
+              <span class="acc-arrow">▾</span>
+            </summary>
+            <div class="accordion-body">
+              <div class="menu-grid">
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">★ Cheesecake</span
+                    ><span class="item-price">$4.99</span>
+                  </div>
+                  <p class="item-desc">
+                    Rich and creamy cheesecake. Choose strawberry, turtle or
+                    plain ($4.75).
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name"
+                      >★ Mimi's Heavenly Bread Pudding</span
+                    ><span class="item-price">$7.99</span>
+                  </div>
+                  <p class="item-desc">
+                    Homemade with raisins, walnuts and dates. Served warm,
+                    topped with vanilla ice cream and drizzled with caramel.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Banana Split</span
+                    ><span class="item-price">$8.59</span>
+                  </div>
+                  <p class="item-desc">
+                    Chocolate, vanilla and strawberry ice cream with Hershey's
+                    chocolate syrup, caramel, strawberry toppings, nuts, whipped
+                    cream and a cherry.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Hot Fudge Cream Puff</span
+                    ><span class="item-price">$6.49</span>
+                  </div>
+                  <p class="item-desc">Vanilla ice cream and hot fudge.</p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Fruit Pie</span
+                    ><span class="item-price">$4.39</span>
+                  </div>
+                  <p class="item-desc">
+                    Apple, blueberry or cherry pie made fresh. À la mode $5.29.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Pecan Pie</span
+                    ><span class="item-price">$4.99</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">★ Rice Pudding</span
+                    ><span class="item-price">$3.99</span>
+                  </div>
+                  <p class="item-desc">
+                    Thick and creamy, spiced with cinnamon, served warm upon
+                    request.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">★ Ice Cream Sundae</span
+                    ><span class="item-price">$5.29</span>
+                  </div>
+                  <p class="item-desc">
+                    Cool rich ice cream topped with a river of your favorite
+                    flavor.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </details>
+
+          <!-- DRINKS -->
+          <details class="accordion">
+            <summary class="accordion-header">
+              <span class="acc-title">Drinks</span>
+              <span class="acc-arrow">▾</span>
+            </summary>
+            <div class="accordion-body">
+              <div class="menu-grid">
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Freshly Brewed Coffee</span
+                    ><span class="item-price">$3.39</span>
+                  </div>
+                  <p class="item-desc">Regular or decaf.</p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Hot Tea</span
+                    ><span class="item-price">$3.39</span>
+                  </div>
+                  <p class="item-desc">Regular or herbal.</p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Nestlé Hot Chocolate</span
+                    ><span class="item-price">$3.39</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Soft Drinks (Coke products)</span
+                    ><span class="item-price">Sm $3.25 / Lg $3.39</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Iced Tea</span
+                    ><span class="item-price">$3.39</span>
+                  </div>
+                  <p class="item-desc">Add raspberry +$0.40.</p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Lemonade</span
+                    ><span class="item-price">$3.39</span>
+                  </div>
+                  <p class="item-desc">Add raspberry +$0.40.</p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Milk</span
+                    ><span class="item-price">Sm $2.79 / Lg $3.69</span>
+                  </div>
+                  <p class="item-desc">White or chocolate.</p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Chilled Juice</span
+                    ><span class="item-price">Sm $3.59 / Lg $4.09</span>
+                  </div>
+                  <p class="item-desc">Orange, cranberry, apple or tomato.</p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Milk Shakes</span
+                    ><span class="item-price">$5.89</span>
+                  </div>
+                  <p class="item-desc">
+                    Creamy, rich and thick. Chocolate, vanilla or strawberry.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Root Beer Float</span
+                    ><span class="item-price">$5.39</span>
+                  </div>
+                  <p class="item-desc">
+                    A scoop of vanilla ice cream and Barq's root beer.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </details>
+
+          <!-- KIDS MENU -->
+          <details class="accordion accordion-kids">
+            <summary class="accordion-header">
+              <span class="acc-title"
+                >Kids Menu
+                <em>Ages 12 &amp; Under &middot; Dine-In Only</em></span
+              >
+              <span class="acc-arrow">▾</span>
+            </summary>
+            <div class="accordion-body">
+              <h4 class="sub-section">Breakfast</h4>
+              <div class="menu-grid">
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name"
+                      >2 Eggs, Hash Browns &amp; Toast</span
+                    ><span class="item-price">$4.69</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name"
+                      >2 Eggs + Pancakes or French Toast</span
+                    ><span class="item-price">$4.69</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name"
+                      >2 Eggs + Meat, Hash Browns &amp; Toast</span
+                    ><span class="item-price">$5.99</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Kids Breakfast</span
+                    ><span class="item-price">$5.49</span>
+                  </div>
+                  <p class="item-desc">
+                    2 eggs, breakfast meat and pancakes or French toast.
+                  </p>
+                </div>
+              </div>
+              <h4 class="sub-section">Lunch &amp; Dinner</h4>
+              <div class="menu-grid">
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Chicken Strips &amp; Fries</span
+                    ><span class="item-price">$5.99</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Hamburger &amp; Fries</span
+                    ><span class="item-price">$5.99</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Grilled Cheese &amp; Fries</span
+                    ><span class="item-price">$4.29</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Hot Dog &amp; Fries</span
+                    ><span class="item-price">$4.29</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">3 Pc. Wing Dings &amp; Fries</span
+                    ><span class="item-price">$5.49</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Fish &amp; Chips</span
+                    ><span class="item-price">$5.49</span>
+                  </div>
+                  <p class="item-desc">Batter-dipped cod with fries.</p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Spaghetti</span
+                    ><span class="item-price">$5.99</span>
+                  </div>
+                  <p class="item-desc">
+                    With meat sauce and one piece of garlic bread.
+                  </p>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Mac &amp; Cheese</span
+                    ><span class="item-price">$4.59</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </details>
+
+          <!-- SIDE ORDERS -->
+          <details class="accordion">
+            <summary class="accordion-header">
+              <span class="acc-title">Side Orders</span>
+              <span class="acc-arrow">▾</span>
+            </summary>
+            <div class="accordion-body">
+              <div class="menu-grid">
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Rice Pilaf</span
+                    ><span class="item-price">$3.99</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">French Fries</span
+                    ><span class="item-price">$3.99</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Sweet Potato Fries</span
+                    ><span class="item-price">$4.79</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Mashed Potatoes &amp; Gravy</span
+                    ><span class="item-price">$3.99</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Baked Potato &amp; Sour Cream</span
+                    ><span class="item-price">$3.99</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Vegetable of the Day</span
+                    ><span class="item-price">$3.49</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Fruit Cup</span
+                    ><span class="item-price">$4.99</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Cottage Cheese</span
+                    ><span class="item-price">$3.59</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Coleslaw</span
+                    ><span class="item-price">$3.59</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Applesauce</span
+                    ><span class="item-price">$3.49</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Pita Bread</span
+                    ><span class="item-price">$1.69</span>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <div class="item-top">
+                    <span class="item-name">Greek Bread</span
+                    ><span class="item-price">$1.69</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </details>
+        </div>
+        <!-- /tab-main -->
+
+        <!-- ===================== CATERING TAB ===================== -->
+        <div class="tab-panel" id="tab-catering">
+          <div class="catering-intro">
+            <p>
+              Planning a party, corporate event, or special gathering? Mimi's
+              Diner offers full catering service. Call us to place your order!
+            </p>
+            <a href="tel:8102319800" class="btn btn-primary"
+              >Call (810) 231-9800 to Order</a
+            >
+          </div>
+          <div class="catering-grid">
+            <div class="catering-item">
+              <h3>Greek Salad</h3>
+              <p>
+                Lettuce, tomatoes, feta cheese, chickpeas, beets, peppers &amp;
+                olives. Add grilled chicken +$1.99 each.
+              </p>
+              <div class="catering-price">½ Pan $38 &middot; Full Pan $65</div>
+            </div>
+            <div class="catering-item">
+              <h3>Kebobs</h3>
+              <p>
+                Chunks of beef tenderloin or chicken skewered with green peppers
+                &amp; onions. Add pita +$0.69.
+              </p>
+              <div class="catering-price">
+                Min. 10 &middot; $8.29 each &middot; 20+ $7.99 each
+              </div>
+            </div>
+            <div class="catering-item">
+              <h3>Gyro Platter</h3>
+              <p>
+                Gyro meat or chicken sliced thin with tomatoes &amp; onion,
+                alongside homemade gyro sauce and pita bread.
+              </p>
+              <div class="catering-price">
+                Enough for 20 gyros &middot; $130
+              </div>
+            </div>
+            <div class="catering-item">
+              <h3>Spinach Pie</h3>
+              <p>
+                Homemade with fresh spinach and feta cheese with a touch of
+                onion between our special spice layered flaky phyllo pastry.
+              </p>
+              <div class="catering-price">
+                Full Pan (20 pcs) $100 &middot; 10–19 pcs $6 each
+              </div>
+            </div>
+            <div class="catering-item">
+              <h3>Hummus Platter</h3>
+              <p>Our housemade hummus platter — perfect for any gathering.</p>
+              <div class="catering-price">$45</div>
+            </div>
+            <div class="catering-item">
+              <h3>Baked Mostaccioli</h3>
+              <p>Mostaccioli noodles topped with our special marinara sauce.</p>
+              <div class="catering-price">½ Pan $65 &middot; Full Pan $100</div>
+            </div>
+            <div class="catering-item">
+              <h3>Coneys for a Crowd</h3>
+              <p>
+                You make your own coneys! Includes hot dogs, buns, our delicious
+                chili sauce, and onions.
+              </p>
+              <div class="catering-price">20 Coneys &middot; $65</div>
+            </div>
+            <div class="catering-item">
+              <h3>Rice Pilaf</h3>
+              <p>Seasoned rice with red sauce on the side.</p>
+              <div class="catering-price">½ Pan $38 &middot; Full Pan $60</div>
+            </div>
+          </div>
+        </div>
+        <!-- /tab-catering -->
       </div>
-    </div>
-  </div>
-</section>
+      <!-- /container -->
+    </section>
 
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="footer-inner">
-    <img src="mimi-website.jpg" alt="Mimi's Diner" class="footer-logo-img">
-    <p>5589 E M36 &middot; Pinckney, MI 48169 &middot; <a href="tel:8102319800">(810) 231-9800</a></p>
-    <p class="footer-copy">&copy; 2025 Mimi's Diner. All rights reserved.</p>
-  </div>
-  <a href="#hero" class="back-to-top" aria-label="Back to top">↑</a>
-</footer>
+    <!-- HOURS & LOCATION -->
+    <section id="location" class="location-section">
+      <div class="container">
+        <div class="section-header light">
+          <h2>Hours &amp; Find Us</h2>
+          <p>We'd love to see you — come on in!</p>
+        </div>
+        <div class="location-grid">
+          <div class="location-card">
+            <h3>Hours</h3>
+            <table class="hours-table">
+              <tr>
+                <td>Monday</td>
+                <td>8:00 am – 8:00 pm</td>
+              </tr>
+              <tr>
+                <td>Tuesday</td>
+                <td>8:00 am – 8:00 pm</td>
+              </tr>
+              <tr>
+                <td>Wednesday</td>
+                <td>8:00 am – 8:00 pm</td>
+              </tr>
+              <tr>
+                <td>Thursday</td>
+                <td>8:00 am – 8:00 pm</td>
+              </tr>
+              <tr>
+                <td>Friday</td>
+                <td>8:00 am – 8:00 pm</td>
+              </tr>
+              <tr>
+                <td>Saturday</td>
+                <td>8:00 am – 8:00 pm</td>
+              </tr>
+              <tr>
+                <td>Sunday</td>
+                <td>8:00 am – 8:00 pm</td>
+              </tr>
+            </table>
+            <p class="hours-note">★ Breakfast Specials served Mon–Fri 8–11am</p>
+          </div>
+          <div class="location-card">
+            <h3>Find Us</h3>
+            <address>
+              <p>5589 E M36</p>
+              <p>Pinckney, MI 48169</p>
+            </address>
+            <p class="phone-large">
+              <a href="tel:8102319800">(810) 231-9800</a>
+            </p>
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=5589+E+M36+Pinckney+MI+48169"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-primary"
+              >Get Directions</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
 
-<script src="script.js"></script>
-</body>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <img
+          src="mimi-website.jpg"
+          alt="Mimi's Diner"
+          class="footer-logo-img"
+        />
+        <p>
+          5589 E M36 &middot; Pinckney, MI 48169 &middot;
+          <a href="tel:8102319800">(810) 231-9800</a>
+        </p>
+        <p class="footer-copy">
+          &copy; 2025 Mimi's Diner. All rights reserved.
+        </p>
+      </div>
+      <a href="#hero" class="back-to-top" aria-label="Back to top">↑</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
